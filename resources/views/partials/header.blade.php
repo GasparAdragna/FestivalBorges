@@ -3,7 +3,7 @@
     <img src="/images/ciudad.png" alt="">
     {{-- <a class="navbar-brand" href="/">Festival Borges</a> --}}
     <a href="/"><img src="/images/REDONDO 800X800.png" alt="" style="padding-right: 10px; max-width:65px;"></a>
-    <img src="/images/ba.png" alt="">
+    <img src="/images/BA.png" alt="">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
