@@ -20,8 +20,8 @@
         <div class="mask rgba-black-light"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Homenaje a Jorge Luis Borges a 120 años de su nacimiento.</h3>
-        <p>El Festival tiene una actividad para vos: conferencias, talleres, cine y más.</p>
+        <h3 class="h3-responsive">Homenaje a Jorge Luis Borges a 122 años de su nacimiento.</h3>
+        <p>Del 23 al 28 de agosto de 2021</p>
         <a href="/pordia"><button type="button" class="btn btn-primary btn-lg">Ver actividades por día</button></a>
       </div>
     </div>
@@ -61,7 +61,7 @@
       <div class="carousel-caption">
         <h3 class="h3-responsive">¿Como escribió Borges?</h3>
         <p>No te pierdas la conferencia de Daniel Balderston, Borges Center -Universidad de Pittsburgh – Invitado Internacional</p>
-        <a href="/conferencias"><button type="button" class="btn btn-primary btn-lg">Ver conferencias</button></a>
+        <a href="/charlas"><button type="button" class="btn btn-primary btn-lg">Ver conferencias</button></a>
       </div>
     </div>
     <div class="carousel-item">
@@ -74,7 +74,7 @@
       <div class="carousel-caption">
         <h3 class="h3-responsive">Borges y la filosofía</h3>
         <p>No te pierdas la conferencia de DARIO SZTATJNSZRAJBER.</p>
-        <a href="/conferencias"><button type="button" class="btn btn-primary btn-lg">Ver conferencias</button></a>
+        <a href="/charlas"><button type="button" class="btn btn-primary btn-lg">Ver conferencias</button></a>
       </div>
     </div>
   </div>
@@ -103,12 +103,12 @@
     <h2 class="mb-5">¿Qué hacer en el festival?</h2>
   </div>
   <div class="d-flex flex-row justify-content-around">
-    <a href="/conferencias">
+    <a href="/charlas">
       <div class="card" style="width: 25rem;">
         <img src="images/cuadrados/conferencias.png" class="card-img" alt="...">
         <div class="card-img-overlay">
           <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <p style="color:#fff; font-size: 2em;">Conferencias</p>
+            <p style="color:#fff; font-size: 2em;">Charlas</p>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@
     </a>
   </div>
   <br>
-  <div class="d-flex flex-row justify-content-around">
+  {{-- <div class="d-flex flex-row justify-content-around">
     <a href="/cine">
       <div class="card" style="width: 25rem;">
         <img src="images/cuadrados/cine.png" class="card-img" alt="...">
@@ -165,26 +165,26 @@
         </div>
       </div>
     </a>
-  </div>
+  </div> --}}
   <br>
   <br>
   <br>
 
   <section class="testimonials text-center bg-light">
     <div class="container">
-      <h2 class="mb-5">Participantes Festival Borges 2019</h2>
+      <h2 class="mb-5">Participantes Festival Borges 2021</h2>
       <div class="row">
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Alan Pauls.jpg" alt="">
-            <h5>Alan Pauls</h5>
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/dario SZTATJNSZRAJBER.jpg" alt="">
+            <h5>Dario Sztatjnszrajber</h5>
             <p class="font-weight-light mb-0">Participante Internacional</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/beatriz sarlo.jpg" alt="">
-            <h5>Beatriz Sarlo</h5>
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/patricio zunini.jpg" alt="">
+            <h5>Patricio Zunini</h5>
             <p class="font-weight-light mb-0">Participante Internacional</p>
           </div>
         </div>
@@ -198,7 +198,7 @@
       </div>
       <br>
       <br>
-      <div class="row">
+      {{-- <div class="row">
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/dario SZTATJNSZRAJBER.jpg" alt="">
@@ -220,17 +220,24 @@
             <p class="font-weight-light mb-0">Participante Internacional</p>
           </div>
         </div>
-      </div>
-      <br>
-      <br>
+      </div> --}}
+      {{-- <br>
+      <br> --}}
       <div class="row">
-        <div class="col-lg-4">
+        {{-- <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/beatriz sarlo.jpg" alt="">
+            <h5>Beatriz Sarlo</h5>
+            <p class="font-weight-light mb-0">Participante Internacional</p>
+          </div>
+        </div> --}}
+        {{-- <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/patricio zunini.jpg" alt="">
             <h5>Patricio Zunini</h5>
             <p class="font-weight-light mb-0">Participante Internacional</p>
           </div>
-        </div>
+        </div> --}}
         {{-- <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/dario SZTATJNSZRAJBER.jpg" alt="">
@@ -245,8 +252,43 @@
             <p class="font-weight-light mb-0">Participante Internacional</p>
           </div>
         </div> --}}
+        {{-- <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Alan Pauls.jpg" alt="">
+            <h5>Alan Pauls</h5>
+            <p class="font-weight-light mb-0">Participante Internacional</p>
+          </div>
+        </div> --}}
       </div>
     </div>
   </section>
-
+  <section class="text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">Nos acompañan</h2>
+      <div class="row d-flex align-items-center">
+        <div class="col-4">
+          <img src="images/megenazgoLogo.jpg" class="card-img" alt="Logo Mecenazgo">
+        </div>
+        <div class="col-4">
+          <img src="images/impulso-cultural.jpg" style="max-height:150px; max-width:150px;"class="card-img" alt="Logo Impulso Cultural">
+        </div>
+        <div class="col-4">
+          <img src="images/itau_fundacion.png" class="card-img" alt="Logo Itau Fundacion">
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-4">
+          <div class="card bg-dark">
+            <img src="images/mercatus.png" class="card-img" alt="Logo Mercatus&Co">
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card bg-dark">
+            <img src="images/AVENGERS logo.jpg" class="card-img" alt="Logo Mercatus&Co">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 @endsection

@@ -2,7 +2,7 @@
 @section('main')
   <br><br><br><br>
     <div class="container">
-      <h3>Todas las conferencias son gratuitas y con inscripción previa.</h3>
+      <h3>Todas las charlas son gratuitas y con inscripción previa.</h3>
       <br>
       <h2>23 de Agosto</h2>
       <div class="card">

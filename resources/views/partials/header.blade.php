@@ -2,7 +2,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark  barra-navegacion" style="background-color: #000;">
     <img src="/images/ciudad.png" alt="">
     {{-- <a class="navbar-brand" href="/">Festival Borges</a> --}}
-    <a href="/"><img src="/images/logo.png" alt="" style="padding-right: 10px;"></a>
+    <a href="/"><img src="/images/REDONDO 800X800.png" alt="" style="padding-right: 10px; max-width:65px;"></a>
     <img src="/images/ba.png" alt="">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
             Programación
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-            <a class="dropdown-item" href="/conferencias">Conferencias</a>
+            <a class="dropdown-item" href="/charlas">Charlas</a>
             <a class="dropdown-item" href="/talleres">Talleres de Lectura</a>
             <a class="dropdown-item" href="/cine">Cine</a>
             <a class="dropdown-item" href="/chicos">Actividades para chicos</a>
@@ -41,7 +41,7 @@
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/conferencias">Conferencias <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/charlas">Charlas <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>

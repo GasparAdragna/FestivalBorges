@@ -19,7 +19,7 @@
             <a href="#">E-Mail</a>
           </li>
         </ul>
-        <p class="text-muted small mb-4 mb-lg-0">&copy; Festival Borges 2019. Todos los derechos reservados.</p>
+        <p class="text-muted small mb-4 mb-lg-0">&copy; Festival Borges 2021. Todos los derechos reservados.</p>
       </div>
       <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
         <ul class="list-inline mb-0">

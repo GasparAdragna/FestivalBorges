@@ -23,7 +23,7 @@ Route::get('chicos', function () {
 Route::get('cine', function () {
     return view('cine');
 });
-Route::get('conferencias', function () {
+Route::get('charlas', function () {
     return view('conferencias');
 });
 Route::get('maraton', function () {
