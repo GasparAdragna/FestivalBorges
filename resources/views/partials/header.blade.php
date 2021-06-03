@@ -19,9 +19,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/sobre">Sobre el Festival</a>
-            <a class="dropdown-item" href="/organizacion">Organizacion, autoridades</a>
-            <a class="dropdown-item" href="#">Biografía de Jorge Luis Borges</a>
-            <a class="dropdown-item" href="#">Sedes</a>
+            <a class="dropdown-item" href="/organizacion">Organización</a>
+            <a class="dropdown-item" href="/biografia">Biografía de Jorge Luis Borges</a>
           </div>
         </li>
         <li class="nav-item dropdown active">
@@ -30,18 +29,11 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
             <a class="dropdown-item" href="/charlas">Charlas</a>
-            <a class="dropdown-item" href="/talleres">Talleres de Lectura</a>
-            <a class="dropdown-item" href="/cine">Cine</a>
-            <a class="dropdown-item" href="/chicos">Actividades para chicos</a>
-            <a class="dropdown-item" href="/maraton">Maratón de lectura</a>
-            <a class="dropdown-item" href="/visita">Visita guiada Biblioteca Miguel Cané</a>
+            <a class="dropdown-item" href="/talleres">Talleres</a>
+            <a class="dropdown-item" href="/cine">Lecturas</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Por Sede</a>
             <a class="dropdown-item" href="/pordia">Por Día</a>
           </div>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/charlas">Charlas <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>

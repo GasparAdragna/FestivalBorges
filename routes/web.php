@@ -38,6 +38,9 @@ Route::get('sobre', function () {
 Route::get('organizacion', function () {
     return view('organizacion');
 });
+Route::get('biografia', function () {
+    return view('biografia');
+});
 Route::get('pordia', function () {
     return view('pordia');
 });
