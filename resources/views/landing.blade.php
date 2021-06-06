@@ -97,9 +97,7 @@
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
+
 
   {{-------------CARDS----------}}
   <div class="container-fluid text-center">
@@ -144,37 +142,6 @@
     </div>
   </div>
   <br>
-  {{-- <div class="d-flex flex-row justify-content-around">
-    <a href="/cine">
-      <div class="card" style="width: 25rem;">
-        <img src="images/cuadrados/cine.png" class="card-img" alt="...">
-        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-          <p style="color:#fff; font-size: 2em;">Cine</p>
-        </div>
-      </div>
-    </a>
-    <a href="/visita">
-      <div class="card" style="width: 25rem;">
-        <img src="images/cuadrados/guiada.png" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-            <p style="color:#fff; font-size: 2em;">Visitas</p>
-            <p style="color:#fff; font-size: 2em;">guiadas</p>
-          </div>
-        </div>
-      </div>
-    </a>
-    <a href="/chicos">
-      <div class="card" style="width: 25rem;">
-        <img src="images/cuadrados/chicos.png" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <p style="color:#fff; font-size: 2em;">Chicos</p>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div> --}}
   <br>
   <br>
   <br>
@@ -201,8 +168,8 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Daniel Balderston.jpg" alt="">
-            <h5>Daniel Balderston</h5>
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Daniel Balderston.jpg" alt="Daniel Balderston">
+            <h5><a href="oradores/daniel-balderston">Daniel Balderston</a></h5>
             <p class="font-weight-light mb-0">Participante Internacional</p>
             <br>
           </div>
@@ -230,17 +197,35 @@
             <p class="font-weight-light mb-0">Participante Local</p>
             <br>
           </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/anibal jarkowski.jpg" alt="Anibal Jarkowski">
+            <h5> <a href="/oradores/anibal-jarkowski">Anibal Jarkowski</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Martin Kohan.jpg" alt="Martin Kohan">
+            <h5> <a href="/oradores/martin-kohan">Martin Kohan</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Pablo Gaiano.jpg" alt="Pablo Gaiano">
+            <h5> <a href="/oradores/pablo-gaiano">Pablo Gaiano</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
       </div>
       <br>
       <br>
       {{-- <div class="row">
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/dario SZTATJNSZRAJBER.jpg" alt="">
-            <h5>Dario Sztatjnszrajber</h5>
-            <p class="font-weight-light mb-0">Participante Internacional</p>
-          </div>
-        </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Fernando-Flores-Maio.jpg" alt="">
@@ -275,13 +260,6 @@
         </div> --}}
         {{-- <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/dario SZTATJNSZRAJBER.jpg" alt="">
-            <h5>Dario Sztatjnszrajber</h5>
-            <p class="font-weight-light mb-0">Participante Internacional</p>
-          </div>
-        </div> --}}
-        {{-- <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/liliana heker.jpg" alt="">
             <h5>Liliana Heker</h5>
             <p class="font-weight-light mb-0">Participante Internacional</p>
@@ -299,29 +277,30 @@
   </section>
   <section class="text-center bg-light">
     <div class="container">
-      <h2 class="mb-5">Nos acompañan</h2>
+      <h2 class="mb-5">Nos apoyan</h2>
       <div class="row d-flex align-items-center">
         <div class="col-4">
-          <img src="images/megenazgoLogo.jpg" class="card-img" alt="Logo Mecenazgo">
+          <img src="images/megenazgoLogo.jpg" class="sponsor" alt="Logo Mecenazgo">
         </div>
         <div class="col-4">
-          <img src="images/impulso-cultural.jpg" style="max-height:150px; max-width:150px;"class="card-img" alt="Logo Impulso Cultural">
+          <img src="images/impulso-cultural.jpg" style="max-height:100px; max-width:100px;"class="sponsor" alt="Logo Impulso Cultural">
         </div>
         <div class="col-4">
-          <img src="images/itau_fundacion.png" class="card-img" alt="Logo Itau Fundacion">
+          <img src="images/itau_fundacion.png" class="sponsor" alt="Logo Itau Fundacion">
         </div>
       </div>
       <br><br>
       <div class="row d-flex align-items-center">
         <div class="col-4">
-          <div class="card bg-dark">
-            <img src="images/mercatus.png" class="card-img" alt="Logo Mercatus&Co">
+          <div class="card bg-dark d-flex justify-content-center">
+            <img src="images/mercatus.png" class="sponsor" alt="Logo Mercatus&Co">
           </div>
         </div>
         <div class="col-4">
-          <div class="card bg-dark">
-            <img src="images/AVENGERS logo.jpg" class="card-img" alt="Logo Mercatus&Co">
-          </div>
+            <img src="images/AVENGERS logo.jpg" class="sponsor" alt="Logo Avengers SRL">
+        </div>
+        <div class="col-4">
+            <img src="images/BA-2.png" class="sponsor" alt="Logo BA">
         </div>
       </div>
     </div>

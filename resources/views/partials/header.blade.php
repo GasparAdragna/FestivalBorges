@@ -19,7 +19,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/sobre">Sobre el Festival</a>
-            <a class="dropdown-item" href="/organizacion">Organización</a>
+            <a class="dropdown-item" href="/organizacion">Quienes somos</a>
             <a class="dropdown-item" href="/biografia">Biografía de Jorge Luis Borges</a>
           </div>
         </li>

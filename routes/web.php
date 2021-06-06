@@ -71,4 +71,16 @@ Route::prefix('oradores')->group(function () {
     Route::get('carlos-gamerro', function () {
         return view('oradores.carlos-gamerro');
     });
+    Route::get('daniel-balderston', function () {
+        return view('oradores.daniel-balderston');
+    });
+    Route::get('anibal-jarkowski', function () {
+        return view('oradores.anibal-jarkowski');
+    });
+    Route::get('pablo-gaiano', function () {
+        return view('oradores.pablo-gaiano');
+    });
+    Route::get('martin-kohan', function () {
+        return view('oradores.martin-kohan');
+    });
 });
