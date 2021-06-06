@@ -53,3 +53,22 @@ Route::get('pordia/2408', function () {
 Route::get('persona', function () {
     return view('persona');
 });
+
+
+Route::prefix('oradores')->group(function () {
+    Route::get('pablo-gianera', function () {
+        return view('oradores.pablo-gianera');
+    });
+    Route::get('dario-sztajnszrajber', function () {
+        return view('oradores.dario-sztajnszrajber');
+    });
+    Route::get('pedro-mairal', function () {
+        return view('oradores.pedro-mairal');
+    });
+    Route::get('santiago-llach', function () {
+        return view('oradores.santiago-llach');
+    });
+    Route::get('carlos-gamerro', function () {
+        return view('oradores.carlos-gamerro');
+    });
+});

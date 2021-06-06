@@ -1,5 +1,8 @@
 @extends('base')
 @section('main')
+<div class="container">
+
+</div>
   <!--Carousel Wrapper-->
 <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
   <!--Indicators-->
@@ -99,40 +102,46 @@
   <br>
 
   {{-------------CARDS----------}}
-  <div class="d-flex flex-row justify-content-center">
+  <div class="container-fluid text-center">
     <h2 class="mb-5">¿Qué hacer en el festival?</h2>
-  </div>
-  <div class="d-flex flex-row justify-content-around">
-    <a href="/charlas">
-      <div class="card" style="width: 25rem;">
-        <img src="images/cuadrados/conferencias.png" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <p style="color:#fff; font-size: 2em;">Charlas</p>
+    <div class="row">
+      <div class="col-lg-4 d-flex justify-content-center">
+        <a href="/charlas">
+          <div class="card" style="width: 25rem;">
+            <img src="images/cuadrados/conferencias.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p style="color:#fff; font-size: 2em;">Charlas</p>
+              </div>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-    </a>
-    <a href="/talleres">
-      <div class="card" style="width: 25rem;">
-        <img src="images/cuadrados/talleres.png" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <p style="color:#fff; font-size: 2em;">Talleres</p>
+      <div class="col-lg-4 d-flex justify-content-center">
+        <a href="/talleres">
+          <div class="card" style="width: 25rem;">
+            <img src="images/cuadrados/talleres.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p style="color:#fff; font-size: 2em;">Talleres</p>
+              </div>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-    </a>
-    <a href="/maraton">
-      <div class="card" style="width: 25rem;">
-        <img src="images/cuadrados/lectura.png" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <p style="color:#fff; font-size: 2em;">Lecturas</p>
+      <div class="col-lg-4 d-flex justify-content-center">
+        <a href="/maraton">
+          <div class="card" style="width: 25rem;">
+            <img src="images/cuadrados/lectura.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p style="color:#fff; font-size: 2em;">Lecturas</p>
+              </div>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-    </a>
+    </div>
   </div>
   <br>
   {{-- <div class="d-flex flex-row justify-content-around">
@@ -174,27 +183,53 @@
     <div class="container">
       <h2 class="mb-5">Participantes Festival Borges 2021</h2>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/dario SZTATJNSZRAJBER.jpg" alt="">
-            <h5>Dario Sztatjnszrajber</h5>
-            <p class="font-weight-light mb-0">Participante Internacional</p>
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/dario.jpg" alt="Darío Sztajnszrajber">
+            <h5><a href="/oradores/dario-sztajnszrajber">Darío Sztajnszrajber</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/patricio zunini.jpg" alt="">
-            <h5>Patricio Zunini</h5>
-            <p class="font-weight-light mb-0">Participante Internacional</p>
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/santiago llach.jpeg" alt="Santiago Llach">
+            <h5><a href="/oradores/santiago-llach">Santiago Llach</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Daniel Balderston.jpg" alt="">
             <h5>Daniel Balderston</h5>
             <p class="font-weight-light mb-0">Participante Internacional</p>
+            <br>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Pablo Gianera.jpg" alt="Pablo Gianera">
+            <h5> <a href="/oradores/pablo-gianera">Pablo Gianera</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Pedro Mairal.jpg" alt="Pedro Mairal">
+            <h5><a href="/oradores/pedro-mairal">Pedro Mairal</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/carlos gamerro.jpg" alt="Carlos Gamerro">
+            <h5> <a href="/oradores/carlos-gamerro">Carlos Gamerro</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
       </div>
       <br>
       <br>
@@ -277,7 +312,7 @@
         </div>
       </div>
       <br><br>
-      <div class="row">
+      <div class="row d-flex align-items-center">
         <div class="col-4">
           <div class="card bg-dark">
             <img src="images/mercatus.png" class="card-img" alt="Logo Mercatus&Co">
