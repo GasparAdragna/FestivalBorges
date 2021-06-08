@@ -20,7 +20,7 @@
                   </div>
                 <div class="card-body">
                   <h5 class="card-title">Borges y la filosofía</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, inventore praesentium quas placeat expedita amet officia dolores! Eum quas aliquam, animi libero voluptatum dicta vel unde placeat, alias harum saepe?</p>
+                  <p class="card-text">A partir del análisis de algunos cuentos de Ficciones y de El Aleph, abordaremos las presencias de motivos filosóficos en la obra de Borges, y nos embarcaremos a la pregunta por la frontera de género: ¿hay algo que distingue a la filosofía de la literatura?</p>
                   <blockquote class="blockquote mt-0">
                     <footer class="blockquote-footer">Fecha y hora a confirmar</footer>
                   </blockquote>
