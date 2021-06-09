@@ -15,5 +15,6 @@
     @yield('main')
     @include('partials/footer')
     @include('partials/scripts')
+    @yield('js')
   </body>
 </html>

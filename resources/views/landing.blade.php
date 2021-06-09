@@ -1,17 +1,19 @@
 @extends('base')
 @section('main')
 <div class="container">
+  <div class="d-sm-none d-flex">
+    <br><br><br>
+  </div>
 
 </div>
   <!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carousel-example-2" class="carousel slide carousel-fade d-none d-md-flex" data-ride="carousel">
   <!--Indicators-->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-2" data-slide-to="1"></li>
     <li data-target="#carousel-example-2" data-slide-to="2"></li>
     <li data-target="#carousel-example-2" data-slide-to="3"></li>
-    <li data-target="#carousel-example-2" data-slide-to="4"></li>
   </ol>
   <!--/.Indicators-->
   <!--Slides-->
@@ -21,6 +23,9 @@
         <img class="d-block w-100" src="images/banner1.png"
           alt="First slide">
         <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-title">
+        <h1>Festival Borges</h1>
       </div>
       <div class="carousel-caption">
         <h3 class="h3-responsive">Homenaje a Jorge Luis Borges a 122 años de su nacimiento.</h3>
@@ -44,25 +49,12 @@
     <div class="carousel-item">
       <!--Mask color-->
       <div class="view">
-        <img class="d-block w-100" src="images/biblioteca.png"
-          alt="Third slide">
-        <div class="mask rgba-black-slight"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Biblioteca Miguel Cané, donde Borges trabajó y escribió sus primeros textos ficcionales.</h3>
-        <p>Participá de las visitas guiadas.</p>
-        <a href="/visita"><button type="button" class="btn btn-primary btn-lg">Ir a las visitas</button></a>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
         <img class="d-block w-100" src="images/banner4.png"
           alt="Third slide">
         <div class="mask rgba-black-slight"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">¿Como escribió Borges?</h3>
+        <h3 class="h3-responsive">¿Cómo escribió Borges?</h3>
         <p>No te pierdas la conferencia de Daniel Balderston, Borges Center -Universidad de Pittsburgh – Invitado Internacional</p>
         <a href="/charlas"><button type="button" class="btn btn-primary btn-lg">Ver conferencias</button></a>
       </div>
@@ -105,7 +97,7 @@
     <div class="row">
       <div class="col-lg-4 d-flex justify-content-center">
         <a href="/charlas">
-          <div class="card" style="width: 25rem;">
+          <div class="card">
             <img src="images/cuadrados/conferencias.png" class="card-img" alt="...">
             <div class="card-img-overlay">
               <div class="card-img-overlay d-flex justify-content-center align-items-center">
@@ -117,7 +109,7 @@
       </div>
       <div class="col-lg-4 d-flex justify-content-center">
         <a href="/talleres">
-          <div class="card" style="width: 25rem;">
+          <div class="card">
             <img src="images/cuadrados/talleres.png" class="card-img" alt="...">
             <div class="card-img-overlay">
               <div class="card-img-overlay d-flex justify-content-center align-items-center">
@@ -129,7 +121,7 @@
       </div>
       <div class="col-lg-4 d-flex justify-content-center">
         <a href="/maraton">
-          <div class="card" style="width: 25rem;">
+          <div class="card">
             <img src="images/cuadrados/lectura.png" class="card-img" alt="...">
             <div class="card-img-overlay">
               <div class="card-img-overlay d-flex justify-content-center align-items-center">
@@ -193,7 +185,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/carlos gamerro.jpg" alt="Carlos Gamerro">
-            <h5> <a href="/oradores/carlos-gamerro">Carlos Gamerro</a></h5>
+            <h5><a href="/oradores/carlos-gamerro">Carlos Gamerro</a></h5>
             <p class="font-weight-light mb-0">Participante Local</p>
             <br>
           </div>
@@ -201,7 +193,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/anibal jarkowski.jpg" alt="Anibal Jarkowski">
-            <h5> <a href="/oradores/anibal-jarkowski">Anibal Jarkowski</a></h5>
+            <h5><a href="/oradores/anibal-jarkowski">Anibal Jarkowski</a></h5>
             <p class="font-weight-light mb-0">Participante Local</p>
             <br>
           </div>
@@ -209,11 +201,22 @@
         <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Martin Kohan.jpg" alt="Martin Kohan">
-            <h5> <a href="/oradores/martin-kohan">Martin Kohan</a></h5>
+            <h5><a href="/oradores/martin-kohan">Martin Kohan</a></h5>
             <p class="font-weight-light mb-0">Participante Local</p>
             <br>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/patricio zunini.jpg" alt="Patricio Zunini">
+            <h5><a href="/oradores/patricio-zunini">Patricio Zunini</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2 class="mb-5">Talleres de lectura</h2>
+      <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Pablo Gaiano.jpg" alt="Pablo Gaiano">
@@ -251,13 +254,7 @@
             <p class="font-weight-light mb-0">Participante Internacional</p>
           </div>
         </div> --}}
-        {{-- <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/patricio zunini.jpg" alt="">
-            <h5>Patricio Zunini</h5>
-            <p class="font-weight-light mb-0">Participante Internacional</p>
-          </div>
-        </div> --}}
+
         {{-- <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/liliana heker.jpg" alt="">

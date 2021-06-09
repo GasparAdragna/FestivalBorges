@@ -83,4 +83,7 @@ Route::prefix('oradores')->group(function () {
     Route::get('martin-kohan', function () {
         return view('oradores.martin-kohan');
     });
+    Route::get('patricio-zunini', function () {
+        return view('oradores.patricio-zunini');
+    });
 });

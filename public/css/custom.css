@@ -24,3 +24,15 @@ body {
 .sponsor {
     width: 75%;
 }
+
+.carousel-title {
+    position: absolute;
+    right: 15%;
+    bottom: 40%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}

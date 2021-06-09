@@ -8,7 +8,7 @@
           </li>
           <li class="list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="#">Contacto</a>
+            <a href="/contacto">Contacto</a>
           </li>
           <li class="list-inline-item">&sdot;</li>
           <li class="list-inline-item">
