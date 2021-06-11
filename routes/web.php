@@ -86,4 +86,7 @@ Route::prefix('oradores')->group(function () {
     Route::get('patricio-zunini', function () {
         return view('oradores.patricio-zunini');
     });
+    Route::get('marcos-liyo', function () {
+        return view('oradores.marcos-liyo');
+    });
 });

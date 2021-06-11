@@ -20,12 +20,9 @@
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <div class="view">
-        <img class="d-block w-100" src="images/banner1.png"
+        <img class="d-block w-100" src="images/banner1.jpg"
           alt="First slide">
         <div class="mask rgba-black-light"></div>
-      </div>
-      <div class="carousel-title">
-        <h1>Festival Borges</h1>
       </div>
       <div class="carousel-caption">
         <h3 class="h3-responsive">Homenaje a Jorge Luis Borges a 122 años de su nacimiento.</h3>
@@ -221,6 +218,14 @@
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Pablo Gaiano.jpg" alt="Pablo Gaiano">
             <h5> <a href="/oradores/pablo-gaiano">Pablo Gaiano</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/Marcos Liyo.jpg" alt="Marcos Liyo">
+            <h5> <a href="/oradores/marcos-liyo">Marcos Liyo</a></h5>
             <p class="font-weight-light mb-0">Participante Local</p>
             <br>
           </div>
