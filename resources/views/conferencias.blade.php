@@ -1,4 +1,9 @@
 @extends('base')
+
+@section('title')
+  <title>Festival Borges - Charlas</title>
+@endsection
+
 @section('main')
   <br><br><br><br>
     <div class="container">

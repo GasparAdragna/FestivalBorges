@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="/css/custom.css" rel="stylesheet">
     <link href="/css/all.min.css" rel="stylesheet">
-    <title>Festival Borges</title>
+    @yield('title')
   </head>
   <body>
     @include('partials/header')

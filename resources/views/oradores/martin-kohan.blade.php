@@ -1,4 +1,9 @@
 @extends('base')
+
+@section('title')
+  <title>Festival Borges - Martín Kohan</title>
+@endsection
+
 @section('main')
 <br><br><br><br><br>
 <div class="container">
@@ -7,7 +12,7 @@
             <img src="/images/perfiles/Martin Kohan.jpg" alt="Martin Kohan" class="img-fluid rounded-circle">
         </div>
         <div class="col-md-6">
-            <h2 class="mt-4">Martin Kohan</h2>
+            <h2 class="mt-4">Martín Kohan</h2>
             <p>Participante Local</p>
             <br>
             <p>Nació en Buenos Aires en enero de 1967. Enseña Teoría Literaria en la Universidad de Buenos Aires. Última novela publicada: Confesión. Último ensayo publicado: La vanguardia permanente.</p>
