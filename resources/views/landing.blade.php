@@ -20,7 +20,7 @@
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <div class="view">
-        <img class="d-block w-100" src="images/banner1.jpg"
+        <img class="d-block w-100" src="images/banner1-2.png"
           alt="First slide">
         <div class="mask rgba-black-light"></div>
       </div>
