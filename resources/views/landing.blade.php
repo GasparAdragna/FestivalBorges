@@ -7,7 +7,7 @@
 
 </div>
   <!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade d-none d-md-flex" data-ride="carousel">
+<div id="carousel-example-2" class="carousel slide carousel-fade d-none d-md-flex" data-ride="carousel" data-interval="8000">
   <!--Indicators-->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>

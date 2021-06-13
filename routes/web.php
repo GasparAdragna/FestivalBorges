@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\FestivalController;
+
 Route::get('/', function () {
     return view('landing');
 });
@@ -53,7 +55,11 @@ Route::get('pordia/2408', function () {
 Route::get('persona', function () {
     return view('persona');
 });
+Route::get('contacto', function () {
+    return view('contacto');
+});
 
+Route::post('contacto', [FestivalController::class, 'contacto']);
 
 Route::prefix('oradores')->group(function () {
     Route::get('pablo-gianera', function () {
