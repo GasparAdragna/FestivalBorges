@@ -50,6 +50,8 @@
                         <textarea name="message" id="message" rows="4" class="form-control" required>{{old('message')}}</textarea>
                     </div>
                     <div class="col-12">
+                        <div class="g-recaptcha" data-sitekey="6Lep4DYbAAAAADaD0fLTaD4n-L4muB9M0n8tvqJ1"></div>
+                        <br>
                         <button class="btn btn-primary" type="submit">Enviar</button>
                     </div>
                 </form>
@@ -57,4 +59,8 @@
 
         </div>
     </div>
+@endsection
+
+@section('js')
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 @endsection
