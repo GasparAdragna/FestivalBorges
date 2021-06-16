@@ -39,7 +39,7 @@ class FestivalController extends Controller
             Contact::create($request->all());
             $data = array('consulta'=>$request);
             Mail::send('consulta', $data, function($message){
-            $message->to('gaspar.jac@hotmail.com', 'Festival Borges')->subject
+            $message->to('viviadra@hotmail.com', 'Festival Borges')->subject
                 ('¡Nueva consulta en el sitio!');
             $message->from('noreply@festivalborges.com.ar','Festival Borges');
             });
