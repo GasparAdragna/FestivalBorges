@@ -23,7 +23,7 @@
                 Tiene media docena de libros publicados, entre ellos <b><i>Fogwill</i></b>. <b><i>Una memoria coral</i></b> (Mansalva, 2014) y <b><i>Qué es un escritor</i></b>. 
                 <b><i>100 preguntas sobre literatura argentina</i></b> (Pánico el Pánico, 2018).</p>
             <br>
-            <div class="card">
+            {{-- <div class="card">
                 <div class="card-header">
                     Actividad en la que participa
                   </div>
@@ -35,7 +35,7 @@
                   </blockquote>
                   <a href="#" class="btn btn-primary">Quiero inscribirme</a>
                 </div>
-              </div>
+              </div> --}}
         </div>
     </div>
     <br>

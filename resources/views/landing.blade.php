@@ -26,7 +26,6 @@
       </div>
       <div class="carousel-caption">
         <h3 class="h3-responsive">Homenaje a Jorge Luis Borges a 122 años de su nacimiento.</h3>
-        <p>Del 23 al 28 de agosto de 2021</p>
         <a href="/pordia"><button type="button" class="btn btn-primary btn-lg">Ver actividades por día</button></a>
       </div>
     </div>
@@ -90,7 +89,7 @@
 
   {{-------------CARDS----------}}
   <div class="container-fluid text-center">
-    <h2 class="mb-5">¿Qué hacer en el festival?</h2>
+    <h2 class="mb-5">¿Qué hacer en el Festival?</h2>
     <div class="row">
       <div class="col-lg-4 d-flex justify-content-center">
         <a href="/charlas">
@@ -149,9 +148,9 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/santiago llach.jpeg" alt="Santiago Llach">
-            <h5><a href="/oradores/santiago-llach">Santiago Llach</a></h5>
-            <p class="font-weight-light mb-0">Participante Local</p>
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/luis bond.jpg" alt="Luis Bond">
+            <h5><a href="/oradores/luis-bond">Luis Bond</a></h5>
+            <p class="font-weight-light mb-0">Participante Internacional</p>
             <br>
           </div>
         </div>
@@ -208,6 +207,14 @@
             <img class="img-fluid rounded-circle mb-3" src="images/perfiles/patricio zunini.jpg" alt="Patricio Zunini">
             <h5><a href="/oradores/patricio-zunini">Patricio Zunini</a></h5>
             <p class="font-weight-light mb-0">Participante Local</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="images/perfiles/santiago llach.jpeg" alt="Santiago Llach">
+            <h5><a href="/oradores/santiago-llach">Santiago Llach</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
           </div>
         </div>
       </div>

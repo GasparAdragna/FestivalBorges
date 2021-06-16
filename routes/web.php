@@ -95,4 +95,7 @@ Route::prefix('oradores')->group(function () {
     Route::get('marcos-liyo', function () {
         return view('oradores.marcos-liyo');
     });
+    Route::get('luis-bond', function () {
+        return view('oradores.luis-bond');
+    });
 });
