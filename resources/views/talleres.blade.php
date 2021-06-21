@@ -13,7 +13,7 @@
       <h2>{{\Carbon\Carbon::parse($taller->date)->format('d')}} de Agosto</h2>
       <div class="card">
         <div class="card-header">
-          {{\Carbon\Carbon::parse($taller->date)->format('H:i')}}
+          {{\Carbon\Carbon::parse($taller->date)->format('H:i')}}hs
         </div>
         <div class="card-body">
           <blockquote class="blockquote mb-0">
