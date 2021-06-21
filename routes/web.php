@@ -22,9 +22,6 @@ Route::get('chicos', function () {
 Route::get('cine', function () {
     return view('cine');
 });
-Route::get('charlas', function () {
-    return view('conferencias');
-});
 Route::get('maraton', function () {
     return view('maraton');
 });
@@ -65,6 +62,7 @@ Route::post('/agregar/actividad', [FestivalController::class, 'agregarActividad'
 
 Route::post('contacto', [FestivalController::class, 'contacto']);
 Route::get('talleres', [FestivalController::class, 'talleres']);
+Route::get('charlas', [FestivalController::class, 'charlas']);
 
 
 Route::prefix('oradores')->group(function () {

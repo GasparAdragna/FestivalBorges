@@ -67,5 +67,10 @@ class FestivalController extends Controller
       $talleres = Activity::where('activity', 'Taller')->get();
       return view('talleres', compact('talleres'));
     }
+    public function charlas()
+    {
+      $charlas = Activity::where('activity', 'Charla')->orderBy('date', 'asc')->get();
+      return view('conferencias', compact('charlas'));
+    }
 
 }
