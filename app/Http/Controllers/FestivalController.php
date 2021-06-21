@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Contact;
+use App\Activity;
 use Mail;
 
 
@@ -49,4 +50,22 @@ class FestivalController extends Controller
           return redirect()->back()->with('error', 'No se pudo enviar su consulta. Intente nuevamente');
         }
     }
+    public function agregarActividad(Request $request)
+    {
+      $validate = $request->validate([
+        'name' => 'required|string',
+        'speaker' => 'required|string',
+        'description' => 'required|string',
+        'date' => 'required|date',
+        'activity' => 'required|string'
+      ]);
+      Activity::create($request->all());
+      return redirect()->back()->with('status', 'Se creó correctamente la actividad');
+    }
+    public function talleres()
+    {
+      $talleres = Activity::where('activity', 'Taller')->get();
+      return view('talleres', compact('talleres'));
+    }
+
 }

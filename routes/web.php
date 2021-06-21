@@ -16,9 +16,6 @@ use App\Http\Controllers\FestivalController;
 Route::get('/', function () {
     return view('landing');
 });
-Route::get('talleres', function () {
-    return view('talleres');
-});
 Route::get('chicos', function () {
     return view('chicos');
 });
@@ -59,7 +56,16 @@ Route::get('contacto', function () {
     return view('contacto');
 });
 
+Route::get('/agregar/actividad', function () {
+    return view('agregarActividad');
+});
+Route::post('/agregar/actividad', [FestivalController::class, 'agregarActividad']);
+
+
+
 Route::post('contacto', [FestivalController::class, 'contacto']);
+Route::get('talleres', [FestivalController::class, 'talleres']);
+
 
 Route::prefix('oradores')->group(function () {
     Route::get('pablo-gianera', function () {
