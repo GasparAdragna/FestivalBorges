@@ -22,6 +22,9 @@ Route::get('chicos', function () {
 Route::get('cine', function () {
     return view('cine');
 });
+Route::get('lecturas', function () {
+    return view('lecturas');
+});
 Route::get('maraton', function () {
     return view('maraton');
 });
@@ -39,9 +42,6 @@ Route::get('biografia', function () {
 });
 Route::get('pordia', function () {
     return view('pordia');
-});
-Route::get('pordia/2308', function () {
-    return view('2308');
 });
 Route::get('pordia/2408', function () {
     return view('2408');
@@ -63,6 +63,7 @@ Route::post('/agregar/actividad', [FestivalController::class, 'agregarActividad'
 Route::post('contacto', [FestivalController::class, 'contacto']);
 Route::get('talleres', [FestivalController::class, 'talleres']);
 Route::get('charlas', [FestivalController::class, 'charlas']);
+Route::get('pordia/{id}', [FestivalController::class, 'porDia']);
 
 
 Route::prefix('oradores')->group(function () {

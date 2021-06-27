@@ -30,7 +30,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
             <a class="dropdown-item" href="/charlas">Charlas</a>
             <a class="dropdown-item" href="/talleres">Talleres</a>
-            <a class="dropdown-item" href="/cine">Lecturas</a>
+            <a class="dropdown-item" href="/lecturas">Lecturas</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/pordia">Por Día</a>
           </div>

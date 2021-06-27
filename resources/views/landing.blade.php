@@ -51,8 +51,8 @@
       </div>
       <div class="carousel-caption">
         <h3 class="h3-responsive">¿Cómo escribió Borges?</h3>
-        <p>No te pierdas la conferencia de Daniel Balderston, Borges Center -Universidad de Pittsburgh – Invitado Internacional</p>
-        <a href="/charlas"><button type="button" class="btn btn-primary btn-lg">Ver conferencias</button></a>
+        <p>No te pierdas la charlas de Daniel Balderston, Borges Center -Universidad de Pittsburgh – Invitado Internacional</p>
+        <a href="/charlas"><button type="button" class="btn btn-primary btn-lg">Ver charlas</button></a>
       </div>
     </div>
     <div class="carousel-item">
@@ -64,8 +64,8 @@
       </div>
       <div class="carousel-caption">
         <h3 class="h3-responsive">Borges y la filosofía</h3>
-        <p>No te pierdas la conferencia de DARIO SZTATJNSZRAJBER.</p>
-        <a href="/charlas"><button type="button" class="btn btn-primary btn-lg">Ver conferencias</button></a>
+        <p>No te pierdas la charla de DARIO SZTATJNSZRAJBER.</p>
+        <a href="/charlas"><button type="button" class="btn btn-primary btn-lg">Ver charlas</button></a>
       </div>
     </div>
   </div>
