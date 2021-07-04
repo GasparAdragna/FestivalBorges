@@ -103,4 +103,7 @@ Route::prefix('oradores')->group(function () {
     Route::get('luis-bond', function () {
         return view('oradores.luis-bond');
     });
+    Route::get('sylvia-iparraguirre', function () {
+        return view('oradores.sylvia-iparraguirre');
+    });
 });
