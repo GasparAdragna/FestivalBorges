@@ -23,19 +23,19 @@
                 Tiene media docena de libros publicados, entre ellos <b><i>Fogwill</i></b>. <b><i>Una memoria coral</i></b> (Mansalva, 2014) y <b><i>Qué es un escritor</i></b>. 
                 <b><i>100 preguntas sobre literatura argentina</i></b> (Pánico el Pánico, 2018).</p>
             <br>
-            {{-- <div class="card">
+            <div class="card">
                 <div class="card-header">
                     Actividad en la que participa
                   </div>
                 <div class="card-body">
-                  <h5 class="card-title">Borges y la filosofía</h5>
-                  <p class="card-text">A partir del análisis de algunos cuentos de Ficciones y de El Aleph, abordaremos las presencias de motivos filosóficos en la obra de Borges, y nos embarcaremos a la pregunta por la frontera de género: ¿hay algo que distingue a la filosofía de la literatura?</p>
+                  <h5 class="card-title">Cómo se forma un lector: Borges en la Biblioteca Miguel Cané</h5>
+                  <p class="card-text"> Entre 1938 y 1946, Jorge Luis Borges trabajó en una biblioteca municipal en el que fue casi su primer trabajo formal. Ese lugar y esos años terminaron de modelar su recorrido lector y donde se formó como escritor. Fue allí donde escribió El Aleph y donde leyó Historia y decadencia del imperio romano de Gibbon. Donde conjeturó los últimos momentos de Francisco Narciso de Laprida y donde se deslumbró con la biografía de Johnson escrita por Boswell. Este es un recorrido por aquellos años, aquellas lecturas.</p>
                   <blockquote class="blockquote mt-0">
                     <footer class="blockquote-footer">Fecha y hora a confirmar</footer>
                   </blockquote>
                   <a href="#" class="btn btn-primary">Quiero inscribirme</a>
                 </div>
-              </div> --}}
+              </div>
         </div>
     </div>
     <br>

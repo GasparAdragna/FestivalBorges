@@ -24,7 +24,7 @@
       <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
         <ul class="list-inline mb-0">
           <li class="list-inline-item mr-3">
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=100069735954304" target="_blank">
               <i class="fab fa-facebook fa-2x fa-fw"></i>
             </a>
           </li>
@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="#">
+            <a href="https://www.instagram.com/festivalborges/" target="_blank">
               <i class="fab fa-instagram fa-2x fa-fw"></i>
             </a>
           </li>
