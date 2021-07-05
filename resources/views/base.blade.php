@@ -21,6 +21,7 @@
   <body>
     @include('partials/header')
     @yield('main')
+    @yield('others')
     @include('partials/footer')
     @include('partials/scripts')
     @yield('js')

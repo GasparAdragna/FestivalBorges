@@ -12,7 +12,7 @@
             <img src="/images/perfiles/anibal Jarkowski.jpg" alt="Anibal Jarkowski" class="img-fluid rounded-circle">
         </div>
         <div class="col-md-6">
-            <h2 class="mt-4">Anibal Jarkowski</h2>
+            <h2 class="mt-4">Aníbal Jarkowski</h2>
             <p>Participante Local</p>
             <br>
             <p>Licenciado
@@ -41,10 +41,18 @@
                   <blockquote class="blockquote mt-0">
                     <footer class="blockquote-footer">Fecha y hora a confirmar</footer>
                   </blockquote>
-                  <a href="#" class="btn btn-primary">Quiero inscribirme</a>
+                  <button class="btn btn-primary" onclick="inscribirse(6, 'La ciudad en los textos de Borges', 'Anibal Jarkowski', '2021-08-24 18:00:00')">Quiero inscribirme</button>
                 </div>
               </div>
         </div>
     </div>
 </div>
+@endsection
+
+@section('others')
+    @include('partials/modal')
+@endsection
+
+@section('js')
+    <script src="{{asset('js/functions.js')}}"></script>
 @endsection
