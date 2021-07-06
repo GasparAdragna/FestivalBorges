@@ -60,6 +60,18 @@ class FestivalController extends Controller
           return redirect()->back()->with('error', 'No se pudo enviar su consulta. Intente nuevamente');
         }
     }
+    public function test()
+    {
+      $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
+      $activity = Activity::first();
+      $beautymail->send('emails.welcome', ['activity' => $activity], function($message)
+      {
+        $message
+          ->from('noreply@festivalborges.com.ar', 'Festival Borges')
+          ->to('gaspar.jac@hotmail.com', 'Gaspar Adragna')
+          ->subject('¡Bienvenido! - Inscripción exitosa');
+      });
+    }
     public function agregarActividad(Request $request)
     {
       $validate = $request->validate([
@@ -114,6 +126,25 @@ class FestivalController extends Controller
 
       if(!Participant::where('email', $request->email)->where('activity_id', $request->activity_id)->count()){
         $inscripto = Participant::create($request->all());
+        $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
+        $activity = Activity::find($request->activity_id);
+        if(Participant::where('email', $request->email)->count() > 1){
+          $beautymail->send('emails.inscripto', ['activity' => $activity], function($message) use ($request, $activity)
+          {
+            $message
+              ->from('noreply@festivalborges.com.ar', 'Festival Borges')
+              ->to($request->email, $request->first_name. ' '.$request->last_name)
+              ->subject('Inscripción exitosa a la charla de '.$activity->speaker);
+          });
+        } else {
+          $beautymail->send('emails.welcome', ['activity' => $activity], function($message) use ($request)
+          {
+            $message
+              ->from('noreply@festivalborges.com.ar', 'Festival Borges')
+              ->to($request->email, $request->first_name. ' '.$request->last_name)
+              ->subject('¡Bienvenido! - Inscripción exitosa');
+          });
+        }
         return redirect()->back()->with('status', 'Inscripción exitosa! Le enviaremos un recordatorio cuando se acerce la fecha de la actividad. Por favor revise su casilla de SPAM');
       }
       return redirect()->back()->with('error', 'Usted ya está inscripto en esta actividad');

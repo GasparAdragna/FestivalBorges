@@ -9,8 +9,8 @@ class Activity extends Model
     protected $table = "activities";
     protected $fillable = ['name', 'description', 'speaker', 'date', 'activity'];
 
-    public function speaker()
+    public function speakerModel()
     {
-        return $this->belongsTo('App\Speaker');
+        return $this->belongsTo('App\Speaker', 'speaker_id');
     }
 }

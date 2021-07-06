@@ -53,15 +53,21 @@ Route::get('contacto', function () {
     return view('contacto');
 });
 
+Route::get('bienvenido', function () {
+    return view('bienvenido');
+});
+
 Route::get('/agregar/actividad', function () {
     return view('agregarActividad');
 });
 Route::get('/agregar/orador', function () {
     return view('agregarOrador');
 });
-Route::post('/agregar/actividad', [FestivalController::class, 'agregarActividad']);
-Route::post('/agregar/orador', [FestivalController::class, 'agregarOrador']);
+//Route::post('/agregar/actividad', [FestivalController::class, 'agregarActividad']);
+//Route::post('/agregar/orador', [FestivalController::class, 'agregarOrador']);
 Route::post('/inscribirse', [FestivalController::class, 'inscribirse']);
+//Route::get('/test', [FestivalController::class, 'test']);
+
 
 
 Route::post('contacto', [FestivalController::class, 'contacto']);
