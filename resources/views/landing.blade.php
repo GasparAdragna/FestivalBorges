@@ -1,4 +1,9 @@
 @extends('base')
+
+@section('title')
+    <title>Festival Borges - Homenaje a Jorge Luis Borges a 122 años de su nacimiento</title>
+@endsection
+
 @section('main')
 <div class="container">
   <div class="d-sm-none d-flex">
