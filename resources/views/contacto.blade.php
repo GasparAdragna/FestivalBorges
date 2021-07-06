@@ -31,6 +31,7 @@
                     </div>
                 @endif
                 <br>
+                <p>Las actividades son <b>gratuitas</b> y con inscripcion previa. Para inscribirse, visite las actividades <a href="/pordia" target="_blank">por día</a> y haga click en "Quiero registrarme" en la actividad deseada</p>
                 <form class="row" method="post">
                     @csrf
                     <div class="col-12 mb-3">

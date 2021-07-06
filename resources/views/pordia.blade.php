@@ -52,6 +52,7 @@
   <br><br><br><br><br><br>
     <div class="container">
       <h3>Actividades por día:</h3>
+      <p>Hace click en un dia para ver las actividades programadas para esa fecha</p>
       <br>
       <a href="/pordia/23"><button type="button" class="btn btn-primary btn-lg">23 de Agosto</button></a>
       <a href="/pordia/24"><button type="button" class="btn btn-primary btn-lg">24 de Agosto</button></a>
