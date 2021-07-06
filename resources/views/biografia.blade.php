@@ -8,7 +8,7 @@
   <br><br><br><br><br><br>
     <div class="container">
       <h2>Biografía de Jorge Luis Borges</h2>
-      <p>Jorge Luis Borges nace en Buenos Aires, 24 de agosto de 1899.Hijo de Jorge Guillermo Borges, abogado y profesor de psicología, y Leonor Acevedo Suárez. Borges Aprende a leer en inglés antes que en español por influencia de su abuela Frances Haslam, su abuela y de Miss Tink, una institutriz británica.</p>
+      {{-- <p>Jorge Luis Borges nace en Buenos Aires, 24 de agosto de 1899.Hijo de Jorge Guillermo Borges, abogado y profesor de psicología, y Leonor Acevedo Suárez. Borges Aprende a leer en inglés antes que en español por influencia de su abuela Frances Haslam, su abuela y de Miss Tink, una institutriz británica.</p>
       <p>Confiesa a partir de 1905 a su padre, el deseo de ser escritor, quien alienta su vocación. En los años siguientes redacta sus primeros textos: en inglés, un resumen de mitología griega, y en español, La visera fatal, cuento inspirado en un pasaje del Quijote; una tragedia para ser representada con su hermana, Bernardo del Carpio, y una traducción de El príncipe feliz de Oscar Wilde. En 1908 Ingresa en cuarto grado en una escuela primaria del Estado situada en la calle Thames.</p>
       <p>En 1912 Borges publica El rey de la selva, su primer cuento. Y dos años más tarde, en 1914 los Borges parten rumbo a Europa. Allí estudia en Ginebra e Inglaterra. Luego, durante 1919 y 1920 vive en España, se conecta con jóvenes poetas ultraístas y con escritores de la vanguardia española. En esos años colabora en revistas literarias, francesas y españolas, donde publica ensayos y manifiestos.</p>
       <p>En 1921, de regreso a Argentina, redescubre Buenos Aires, en especial los suburbios del sur, y comienza a escribir poemas que perfilan su obra posterior: el patio, los arrabales, las calles de extramuros, el malevo, el culto del coraje. Participa con Macedonio Fernández en la fundación de las revistas Prisma y Prosa y firma el primer manifiesto ultraísta en la revista Nosotros. En 1923 publica su primer libro de poemas, Fervor de Buenos Aires. Durante 1925 se asocia al grupo Sur y conoce a Victoria Ocampo, también ese año publica Luna de enfrente. </p>
@@ -28,9 +28,9 @@
       <p>Durante los años sesenta, su trabajo fue traducido y publicado en los Estados Unidos y en Europa. En 1961 llegó a la fama internacional al obtener el primer Premio Formentor, que recibió junto a Samuel Beckett. </p>
       <p>Luego de este premio, obtiene numerosas traducciones en otros idiomas. Se multiplican las invitaciones de otros países para tenerlo como orador en diferentes eventos culturales, así como también los premios nacionales e internacionales. Continúa escribiendo y publicando su obra.</p>
       <p>En 1985 viaja a Ginebra con su compañera María Kodama con quien se casa al año siguiente luego de una relación de muchos años. </p>
-      <p>Jorge Luis Borges muere el 14 de junio en Ginebra (Suiza) Sus restos descansan en el cementerio de Plainpalais.</p>
+      <p>Jorge Luis Borges muere el 14 de junio en Ginebra (Suiza) Sus restos descansan en el cementerio de Plainpalais.</p> --}}
 
-      <h3>Su obra</h3>
+      {{-- <h3>Su obra</h3>
       <div class="row">
         <div class="col-md-6">
           <div class="p-3">
@@ -159,6 +159,6 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> --}}
 
 @endsection
