@@ -57,18 +57,7 @@ Route::get('bienvenido', function () {
     return view('bienvenido');
 });
 
-Route::get('/agregar/actividad', function () {
-    return view('agregarActividad');
-});
-Route::get('/agregar/orador', function () {
-    return view('agregarOrador');
-});
-//Route::post('/agregar/actividad', [FestivalController::class, 'agregarActividad']);
-//Route::post('/agregar/orador', [FestivalController::class, 'agregarOrador']);
 Route::post('/inscribirse', [FestivalController::class, 'inscribirse']);
-//Route::get('/test', [FestivalController::class, 'test']);
-
-
 
 Route::post('contacto', [FestivalController::class, 'contacto']);
 Route::get('talleres', [FestivalController::class, 'talleres']);
@@ -79,44 +68,16 @@ Route::get('orador/{speaker}', [FestivalController::class, 'speaker']);
 Route::get('tallerista/{speaker}', [FestivalController::class, 'speaker']);
 
 
-// Route::prefix('oradores')->group(function () {
-//     Route::get('pablo-gianera', function () {
-//         return view('oradores.pablo-gianera');
-//     });
-//     Route::get('dario-sztajnszrajber', function () {
-//         return view('oradores.dario-sztajnszrajber');
-//     });
-//     Route::get('pedro-mairal', function () {
-//         return view('oradores.pedro-mairal');
-//     });
-//     Route::get('santiago-llach', function () {
-//         return view('oradores.santiago-llach');
-//     });
-//     Route::get('carlos-gamerro', function () {
-//         return view('oradores.carlos-gamerro');
-//     });
-//     Route::get('daniel-balderston', function () {
-//         return view('oradores.daniel-balderston');
-//     });
-//     Route::get('anibal-jarkowski', function () {
-//         return view('oradores.anibal-jarkowski');
-//     });
-//     Route::get('pablo-gaiano', function () {
-//         return view('oradores.pablo-gaiano');
-//     });
-//     Route::get('martin-kohan', function () {
-//         return view('oradores.martin-kohan');
-//     });
-//     Route::get('patricio-zunini', function () {
-//         return view('oradores.patricio-zunini');
-//     });
-//     Route::get('marcos-liyo', function () {
-//         return view('oradores.marcos-liyo');
-//     });
-//     Route::get('luis-bond', function () {
-//         return view('oradores.luis-bond');
-//     });
-//     Route::get('sylvia-iparraguirre', function () {
-//         return view('oradores.sylvia-iparraguirre');
-//     });
-// });
+Route::middleware(['auth'])->group(function () {
+    Route::get('/agregar/actividad', [FestivalController::class, 'vistaAgregarActividad']);
+    Route::get('/agregar/orador', [FestivalController::class, 'vistaAgregarOrador']);
+    Route::post('/agregar/actividad', [FestivalController::class, 'agregarActividad']);
+    Route::post('/agregar/orador', [FestivalController::class, 'agregarOrador']);
+    Route::get('/inscriptos', [FestivalController::class, 'verInscriptos']);
+    Route::get('/descargar/inscriptos', [FestivalController::class, 'descargarInscriptos']); 
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

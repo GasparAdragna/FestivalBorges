@@ -8,7 +8,11 @@ use App\Contact;
 use App\Activity;
 use App\Participant;
 use App\Speaker;
+use Carbon\Carbon;
 use Mail;
+
+use App\Exports\ParticipantsExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 
 class FestivalController extends Controller
@@ -76,12 +80,13 @@ class FestivalController extends Controller
     {
       $validate = $request->validate([
         'name' => 'required|string',
-        'speaker' => 'required|string',
+        'speaker_id' => 'required',
         'description' => 'required|string',
         'date' => 'required|date',
         'activity' => 'required|string'
       ]);
-      Activity::create($request->all());
+      $speaker = Speaker::find($request->speaker_id);
+      Activity::create($request->all() + ['speaker' => $speaker->first_name.' '.$speaker->last_name]);
       return redirect()->back()->with('status', 'Se creó correctamente la actividad');
     }
     public function agregarOrador(Request $request)
@@ -148,6 +153,25 @@ class FestivalController extends Controller
         return redirect()->back()->with('status', 'Inscripción exitosa! Le enviaremos un recordatorio cuando se acerce la fecha de la actividad. Por favor revise su casilla de SPAM');
       }
       return redirect()->back()->with('error', 'Usted ya está inscripto en esta actividad');
+    }
+    public function vistaAgregarOrador()
+    {
+      return view('agregarOrador');
+    }
+    public function vistaAgregarActividad()
+    {
+      $oradores = Speaker::all();
+      return view('agregarActividad', compact('oradores'));
+    }
+    public function verInscriptos()
+    {
+      $participants = Participant::all();
+      $activities = Activity::orderBy('date', 'asc')->get();
+      return view('inscriptos', compact('participants', 'activities'));
+    }
+    public function descargarInscriptos()
+    {
+      return Excel::download(new ParticipantsExport, 'Participantes.'.Carbon::now()->format('d-m-Y').'.xlsx');
     }
 
 }

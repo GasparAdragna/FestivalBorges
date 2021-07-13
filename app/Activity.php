@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Activity extends Model
 {
     protected $table = "activities";
-    protected $fillable = ['name', 'description', 'speaker', 'date', 'activity'];
+    protected $fillable = ['name', 'description', 'speaker', 'date', 'activity', 'speaker_id'];
 
     public function speakerModel()
     {

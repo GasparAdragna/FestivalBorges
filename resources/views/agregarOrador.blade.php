@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="/css/custom.css" rel="stylesheet">
-    <link href="/css/all.min.css" rel="stylesheet">
-    <title>Agregar Orador</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('content')
     <div class="container mt-3">
         @if (session('status'))
             <div class="alert alert-success" role="alert">
@@ -46,5 +36,4 @@
             <button class="btn btn-primary">Enviar</button>
         </form>
     </div>
-</body>
-</html>
+@endsection
