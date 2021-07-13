@@ -7,6 +7,7 @@
         <th>Sexo</th>
         <th>Pais</th>
         <th>Actividad</th>
+        <th>Orador</th>
     </tr>
     </thead>
     <tbody>
@@ -18,6 +19,7 @@
             <td>{{$participant->sex}}</td>
             <td>{{$participant->country}}</td>
             <td>{{$participant->activity->name}}</td>
+            <td>{{$participant->activity->speaker}} </td>
         </tr>
     @endforeach
     </tbody>
