@@ -141,7 +141,8 @@
 
   <section class="testimonials text-center bg-light">
     <div class="container">
-      <h2 class="mb-5">Participantes Festival Borges 2021</h2>
+      <h2 class="">Participantes Festival Borges 2021</h2>
+      <p class="mb-5">Podés hacer click en el nombre del orador para ver su perfil</p class="mb-5">
       <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">

@@ -19,12 +19,12 @@
 
                 Coordinadora del Diplomado en Estudios Literarios de la Universidad Autónoma de San Luis Potosí, México.
                 
-                Ha publicado artículos académicos en revistas especializadas sobre la obra de Julio Cortázar, Jorge Luis Borges y diversos autores del Río de la Plata. Es coordinadora de talleres de lectura y escritura “Literatura EnEspiral”. <a href="https://www.instagram.com/MargaritaDiazDeLeonI/" target="_blank">@MargaritaDiazDeLeonI</a> <a href="https://www.instagram.com/literaturaenespiral/" target="_blank">@literaturaenespiral</a>
+                Ha publicado artículos académicos en revistas especializadas sobre la obra de Julio Cortázar, Jorge Luis Borges y diversos autores del Río de la Plata. Es coordinadora de talleres de lectura y escritura “Literatura EnEspiral”. <a href="https://www.instagram.com/literaturaenespiral/" target="_blank">@literaturaenespiral</a>
                 Es participante del colectivo “Slam Poetry”, creadores de piezas de lírica acústica con música, canto y poesía. <a href="https://www.instagram.com/slampoetryofficial/" target="_blank">@slampoetryofficial</a>
                 
                 Es autora del poemario “En Escala del 15 al 26”, Talleres Porrúa, 2020.
                 
-                Actualmente se encuentra en prensa su segundo poemario “Falda al viento”, Editorial El Diván Negro. <a href="https://www.instagram.com/margaritadli/" target="_blank">@margaritadli</a> <a href="https://www.instagram.com/margarita.diazdeleon/" target="_blank">@margarita.diazdeleon</a></p>
+                Actualmente se encuentra en prensa su segundo poemario “Falda al viento”, Editorial El Diván Negro. <a href="https://www.instagram.com/margaritadli/" target="_blank">@margaritadli</a></p>
             <br>
         </div>
     </div>
