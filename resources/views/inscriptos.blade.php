@@ -4,8 +4,14 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h4>Total de inscriptos: {{$participants->count()}}</h4>
-            <h4>Total de inscriptos únicos: {{$participants->unique('email')->count()}}</h4>
+            <div class="row">
+                <div class="col-6">
+                    <h4>Total de inscriptos: {{$participants->count()}}</h4>
+                </div>
+                <div class="col-6">
+                    <h4>Total de inscriptos únicos: {{$participants->unique('email')->count()}}</h4>
+                </div>
+            </div>
             <div class="table-responsive">
                 <table class="table table-striped table-hover">
                     <thead>
