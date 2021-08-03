@@ -267,6 +267,14 @@
             <br>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <a href="/tallerista/cecilia-bruzzoni"><img class="img-fluid rounded-circle mb-3" src="images/perfiles/Cecilia Bruzzoni.jpg" alt="Cecilia Bruzzoni"></a>
+            <h5> <a href="/tallerista/cecilia-bruzzoni">Cecilia Bruzzoni</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
       </div>
       <br>
       <h2 class="mb-5">Experiencia Borges</h2>
