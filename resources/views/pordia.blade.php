@@ -128,7 +128,30 @@
         </div>
         <br>
         @empty
-          <p>No hay talleres programaddos para este día</p>
+          <p>No hay talleres programados para este día</p>
+        @endforelse
+        <h3>Experiencia Borges</h3>
+        @forelse ($actividades->where('activity','Experiencia Borges') as $experiencia)
+        <div class="card">
+          <div class="card-header">
+            {{\Carbon\Carbon::parse($experiencia->date)->format('H:i')}}hs
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <h4>{{$experiencia->name}}</h4>
+              <p>{{$experiencia->description}}</p>
+              @php
+                $nombre = eliminar_acentos($experiencia->speaker);
+                $nombre = explode(" ", $nombre);
+              @endphp
+              <footer class="blockquote-footer mb-3">A cargo de <a href="/orador/{{strtolower($nombre[0])}}-{{strtolower($nombre[1])}}" target="_blank"><cite title="Source Title">{{$experiencia->speaker}}.</cite></a></footer>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscripcion" onclick="inscribirse({{$experiencia->id}}, '{{$experiencia->name}}', '{{$experiencia->speaker}}', '{{$taller->date}}')">Quiero inscribirme</button>
+            </blockquote>
+          </div>
+        </div>
+        <br>
+        @empty
+          <p>No hay experiencias programadas para este día</p>
         @endforelse
       @endisset
     </div>
