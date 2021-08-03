@@ -239,6 +239,22 @@
             <br>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <a href="/orador/maria-negroni"><img class="img-fluid rounded-circle mb-3" src="images/perfiles/Maria Negroni.jpg" alt="María Negroni"></a>
+            <h5><a href="/orador/maria-negroni">María Negroni</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <a href="/orador/veronica-abdala"><img class="img-fluid rounded-circle mb-3" src="images/perfiles/Veronica Abdala.jpg" alt="Verónica Abdala"></a>
+            <h5><a href="/orador/veronica-abdala">Verónica Abdala</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
       </div>
       <br>
       <h2 class="mb-5">Talleres de lectura</h2>
