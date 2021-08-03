@@ -279,6 +279,14 @@
             <br>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <a href="/orador/cynthia-edul"><img class="img-fluid rounded-circle mb-3" src="images/perfiles/Cynthia Edul.jpg" alt="Cynthia Edul"></a>
+            <h5><a href="/orador/cynthia-edul">Cynthia Edul</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
       </div>
       <br>
       <br>
