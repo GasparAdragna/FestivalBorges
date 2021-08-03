@@ -121,12 +121,12 @@
         </a>
       </div>
       <div class="col-lg-4 d-flex justify-content-center">
-        <a href="/maraton">
+        <a href="/experiencia-borges">
           <div class="card">
             <img src="images/cuadrados/lectura.png" class="card-img" alt="...">
             <div class="card-img-overlay">
               <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <p style="color:#fff; font-size: 2em;">Lecturas</p>
+                <p style="color:#fff; font-size: 2em;">Experiencia Borges</p>
               </div>
             </div>
           </div>
@@ -247,14 +247,6 @@
             <br>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <a href="/orador/veronica-abdala"><img class="img-fluid rounded-circle mb-3" src="images/perfiles/Veronica Abdala.jpg" alt="Verónica Abdala"></a>
-            <h5><a href="/orador/veronica-abdala">Verónica Abdala</a></h5>
-            <p class="font-weight-light mb-0">Participante Local</p>
-            <br>
-          </div>
-        </div>
       </div>
       <br>
       <h2 class="mb-5">Talleres de lectura</h2>
@@ -271,6 +263,18 @@
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <a href="/tallerista/marcos-liyo"><img class="img-fluid rounded-circle mb-3" src="images/perfiles/Marcos Liyo.jpg" alt="Marcos Liyo"></a>
             <h5> <a href="/tallerista/marcos-liyo">Marcos Liyo</a></h5>
+            <p class="font-weight-light mb-0">Participante Local</p>
+            <br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2 class="mb-5">Experiencia Borges</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <a href="/orador/veronica-abdala"><img class="img-fluid rounded-circle mb-3" src="images/perfiles/Veronica Abdala.jpg" alt="Verónica Abdala"></a>
+            <h5><a href="/orador/veronica-abdala">Verónica Abdala</a></h5>
             <p class="font-weight-light mb-0">Participante Local</p>
             <br>
           </div>

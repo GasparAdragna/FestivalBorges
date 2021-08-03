@@ -34,6 +34,7 @@
                 <select name="activity" id="activity" class="form-control">
                     <option value="Charla">Charla</option>
                     <option value="Taller">Taller</option>
+                    <option value="Experiencia Borges">Experiencia Borges</option>
                 </select>
             </div>
             <button class="btn btn-primary">Enviar</button>

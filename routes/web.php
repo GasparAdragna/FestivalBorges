@@ -22,9 +22,6 @@ Route::get('chicos', function () {
 Route::get('cine', function () {
     return view('cine');
 });
-Route::get('lecturas', function () {
-    return view('lecturas');
-});
 Route::get('maraton', function () {
     return view('maraton');
 });
@@ -62,6 +59,7 @@ Route::post('/inscribirse', [FestivalController::class, 'inscribirse']);
 Route::post('contacto', [FestivalController::class, 'contacto']);
 Route::get('talleres', [FestivalController::class, 'talleres']);
 Route::get('charlas', [FestivalController::class, 'charlas']);
+Route::get('experiencia-borges', [FestivalController::class, 'experiencia']);
 Route::get('pordia/{id}', [FestivalController::class, 'porDia']);
 
 Route::get('orador/{speaker}', [FestivalController::class, 'speaker']);
