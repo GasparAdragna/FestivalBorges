@@ -32,8 +32,8 @@
             </a>
           </li>
           <li class="list-inline-item mr-3">
-            <a href="https://www.instagram.com/festivalborges" target="_blank">
-              <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+            <a href="https://www.youtube.com/channel/UCOQ2zVM4zDe3KsMN0wn1sUw" target="_blank">
+              <i class="fab fa-youtube fa-2x fa-fw"></i>
             </a>
           </li>
           <li class="list-inline-item">
