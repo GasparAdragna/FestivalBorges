@@ -72,7 +72,8 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/agregar/actividad', [FestivalController::class, 'agregarActividad']);
     Route::post('/agregar/orador', [FestivalController::class, 'agregarOrador']);
     Route::get('/inscriptos', [FestivalController::class, 'verInscriptos']);
-    Route::get('/descargar/inscriptos', [FestivalController::class, 'descargarInscriptos']); 
+    Route::get('/descargar/inscriptos', [FestivalController::class, 'descargarInscriptos']);
+    Route::get('/descargar/inscriptos/unicos', [FestivalController::class, 'descargarInscriptosUnicos']); 
 });
 
 

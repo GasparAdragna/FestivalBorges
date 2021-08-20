@@ -176,7 +176,11 @@ class FestivalController extends Controller
     }
     public function descargarInscriptos()
     {
-      return Excel::download(new ParticipantsExport, 'Participantes.'.Carbon::now()->format('d-m-Y').'.xlsx');
+      return Excel::download(new ParticipantsExport(Participant::all()), 'Participantes.'.Carbon::now()->format('d-m-Y').'.xlsx');
+    }
+    public function descargarInscriptosUnicos()
+    {
+      return Excel::download(new ParticipantsExport(Participant::distinct('email')->get()), 'Participantes.'.Carbon::now()->format('d-m-Y').'.xlsx');
     }
 
 }

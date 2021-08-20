@@ -11,6 +11,7 @@
                 <div class="card-body d-flex justify-content-around">
                     <a href="/inscriptos" class="btn btn-primary">Ver inscriptos</a>
                     <a href="/descargar/inscriptos" class="btn btn-success"> <i class="fas fa-file-excel"></i> Descargar Inscriptos</a>
+                    <a href="/descargar/inscriptos/unicos" class="btn btn-success"> <i class="fas fa-file-excel"></i> Descargar Unicos</a>
                 </div>
             </div>
         </div>
