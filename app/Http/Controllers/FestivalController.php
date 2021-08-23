@@ -134,10 +134,14 @@ class FestivalController extends Controller
         'country' => 'required|string'
       ]);
 
+      $activity = Activity::find($request->activity_id);
+      if(now('America/Argentina/Buenos_Aires')->gt($activity->date)){
+        return redirect()->back()->with('error', 'No se puede inscribir a la actividad debido a que ya pasó');
+      }
+
       if(!Participant::where('email', $request->email)->where('activity_id', $request->activity_id)->count()){
         $inscripto = Participant::create($request->all());
         $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
-        $activity = Activity::find($request->activity_id);
         if(Participant::where('email', $request->email)->count() > 1){
           $beautymail->send('emails.inscripto', ['activity' => $activity], function($message) use ($request, $activity)
           {
