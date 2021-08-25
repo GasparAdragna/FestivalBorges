@@ -24,7 +24,7 @@ return [
         'address'     => null,
 
         'logo'        => [
-            'path'   => '%PUBLIC%/images/mail.jpg',
+            'path'   => 'https://www.festivalborges.com.ar/images/mail.jpg',
             'width'  => '',
             'height' => '',
         ],
