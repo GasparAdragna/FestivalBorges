@@ -15,10 +15,6 @@ use App\Http\Controllers\FestivalController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\SpeakerController;
 
-Route::get('/foo', function () {
-    Artisan::call('storage:link');
-});
-
 Route::get('/', function () {
     return view('landing');
 });
