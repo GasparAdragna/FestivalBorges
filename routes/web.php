@@ -12,6 +12,8 @@
 */
 
 use App\Http\Controllers\FestivalController;
+use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\SpeakerController;
 
 Route::get('/', function () {
     return view('landing');
@@ -67,10 +69,20 @@ Route::get('tallerista/{speaker}', [FestivalController::class, 'speaker']);
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/agregar/actividad', [FestivalController::class, 'vistaAgregarActividad']);
-    Route::get('/agregar/orador', [FestivalController::class, 'vistaAgregarOrador']);
-    Route::post('/agregar/actividad', [FestivalController::class, 'agregarActividad']);
-    Route::post('/agregar/orador', [FestivalController::class, 'agregarOrador']);
+    Route::get('/agregar/actividad', [ActivityController::class, 'create']);
+    Route::post('/agregar/actividad', [ActivityController::class, 'store']);
+    Route::get('/actividad/editar/{activity}', [ActivityController::class, 'edit']);
+    Route::post('/actividad/editar/{activity}', [ActivityController::class, 'update']);
+    Route::post('/actividad/eliminar/{activity}', [ActivityController::class, 'destroy']);
+    Route::get('/agregar/festival', [FestivalController::class, 'create']);
+    Route::post('/agregar/festival', [FestivalController::class, 'store']);
+    Route::get('/festival/editar/{festival}', [FestivalController::class, 'edit']);
+    Route::post('/festival/editar/{festival}', [FestivalController::class, 'update']);
+    Route::post('/agregar/orador', [SpeakerController::class, 'store']);
+    Route::get('/agregar/orador', [SpeakerController::class, 'create']);
+    Route::get('/orador/editar/{speaker}', [SpeakerController::class, 'edit']);
+    Route::post('/orador/editar/{speaker}', [SpeakerController::class, 'update']);
+    Route::post('/orador/eliminar/{speaker}', [SpeakerController::class, 'destroy']);
     Route::get('/inscriptos', [FestivalController::class, 'verInscriptos']);
     Route::get('/descargar/inscriptos', [FestivalController::class, 'descargarInscriptos']);
     Route::get('/descargar/inscriptos/unicos', [FestivalController::class, 'descargarInscriptosUnicos']); 

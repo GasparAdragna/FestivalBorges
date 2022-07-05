@@ -13,4 +13,8 @@ class Activity extends Model
     {
         return $this->belongsTo('App\Speaker', 'speaker_id');
     }
+    public function festival()
+    {
+        return $this->belongsTo('App\Festival', 'festival_id');
+    }
 }

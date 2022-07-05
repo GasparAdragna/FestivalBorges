@@ -8,6 +8,7 @@ use App\Contact;
 use App\Activity;
 use App\Participant;
 use App\Speaker;
+use App\Festival;
 use Carbon\Carbon;
 use Mail;
 
@@ -17,6 +18,36 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class FestivalController extends Controller
 {
+    public function create()
+    {
+        return view('festival.create');
+    }
+
+    public function store(Request $request)
+    {
+        $validate = $request->validate([
+            'name' => 'required|string',
+            'active' => 'required',
+        ]);
+        Festival::create($request->all());
+        return redirect()->back()->with('status', 'Se creó correctamente el festival');
+    }
+
+    public function edit(Festival $festival)
+    {
+        return view('festival.edit', compact('festival'));
+    }
+
+    public function update(Request $request, Festival $festival)
+    {
+        $validate = $request->validate([
+            'name' => 'required|string',
+            'active' => 'required',
+        ]);
+        $festival->update($request->all());
+        return redirect()->back()->with('status', 'Se actualizó correctamente el festival');
+    }
+
     public function speaker(Speaker $speaker)
     {
       return view('orador')->withSpeaker($speaker);
@@ -76,50 +107,28 @@ class FestivalController extends Controller
           ->subject('¡Bienvenido! - Inscripción exitosa');
       });
     }
-    public function agregarActividad(Request $request)
-    {
-      $validate = $request->validate([
-        'name' => 'required|string',
-        'speaker_id' => 'required',
-        'description' => 'required|string',
-        'date' => 'required|date',
-        'activity' => 'required|string'
-      ]);
-      $speaker = Speaker::find($request->speaker_id);
-      Activity::create($request->all() + ['speaker' => $speaker->first_name.' '.$speaker->last_name]);
-      return redirect()->back()->with('status', 'Se creó correctamente la actividad');
-    }
-    public function agregarOrador(Request $request)
-    {
-      $validate = $request->validate([
-        'first_name' => 'required|string',
-        'last_name' => 'required|string',
-        'location' => 'required|string',
-        'bio' => 'required|string',
-        'photo' => 'required|string',
-        'slug' => 'required|string',
-      ]);
-      Speaker::create($request->all());
-      return redirect()->back()->with('status', 'Se añadió correctamente al orador');
-    }
     public function talleres()
     {
-      $talleres = Activity::where('activity', 'Taller')->get();
+      $festival = Festival::where('active', 1)->first();
+      $talleres = Activity::where('festival_id', $festival->id)->where('activity', 'Taller')->get();
       return view('talleres', compact('talleres'));
     }
     public function charlas()
     {
-      $charlas = Activity::where('activity', 'Charla')->orderBy('date', 'asc')->get();
+      $festival = Festival::where('active', 1)->first();
+      $charlas = Activity::where('festival_id', $festival->id)->where('activity', 'Charla')->orderBy('date', 'asc')->get();
       return view('conferencias', compact('charlas'));
     }
     public function experiencia()
     {
-      $charlas = Activity::where('activity', 'Experiencia Borges')->orderBy('date', 'asc')->get();
+      $festival = Festival::where('active', 1)->first();
+      $charlas = Activity::where('festival_id', $festival->id)->where('activity', 'Experiencia Borges')->orderBy('date', 'asc')->get();
       return view('experiencia', compact('charlas'));
     }
     public function porDia($dia)
     {
-      $actividades = Activity::whereDay('date', $dia)->get();
+      $festival = Festival::where('active', 1)->first();
+      $actividades = Activity::where('festival_id', $festival->id)->whereDay('date', $dia)->get();
       return view('pordia', compact('actividades', 'dia'));
     }
     public function inscribirse(Request $request)
@@ -189,15 +198,6 @@ class FestivalController extends Controller
         
       }
       return redirect()->back()->with('error', 'Usted ya está inscripto en esta actividad');
-    }
-    public function vistaAgregarOrador()
-    {
-      return view('agregarOrador');
-    }
-    public function vistaAgregarActividad()
-    {
-      $oradores = Speaker::all();
-      return view('agregarActividad', compact('oradores'));
     }
     public function verInscriptos()
     {

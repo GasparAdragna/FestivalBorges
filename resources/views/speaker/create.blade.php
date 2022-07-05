@@ -7,7 +7,7 @@
                 {{ session('status') }}
             </div>
         @endif
-        <form action="" method="post">
+        <form action="" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="first_name" class="form-label">Nombre</label>
@@ -30,10 +30,11 @@
                 <textarea name="bio" id="description" cols="30" rows="5" class="form-control"></textarea>
             </div>
             <div class="form-group">
-                <label for="photo" class="form-label">Foto</label>
-                <input type="text" name="photo" class="form-control">
+                <label for="image">Foto:</label>
+                <input type="file" class="form-control-file" name="image" required accept="image/*">
             </div>
             <button class="btn btn-primary">Enviar</button>
+            <a href="/home" class="btn btn-warning">Volver</a>
         </form>
     </div>
 @endsection

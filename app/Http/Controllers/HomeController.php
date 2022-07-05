@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Activity;
+use App\Speaker;
+use App\Festival;
+
 
 class HomeController extends Controller
 {
@@ -23,6 +27,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $activities = Activity::all();
+        $speakers = Speaker::all();
+        $festivals = Festival::all();
+        return view('home', compact('activities', 'speakers', 'festivals'));
     }
 }

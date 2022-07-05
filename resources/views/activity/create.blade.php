@@ -30,6 +30,14 @@
                 <input type="datetime-local" name="date" class="form-control">
             </div>
             <div class="form-group">
+                <label for="festival_id" class="form-label">Festival</label>
+                <select name="festival_id" id="festival_id" class="form-control">
+                    @foreach ($festivals as $festival)
+                        <option value="{{$festival->id}}" {{$festival->active ? 'selected' : null}}>{{$festival->name}}</option>
+                    @endforeach
+                </select>
+            </div>            
+            <div class="form-group">
                 <label for="activity" class="form-label">Actividad</label>
                 <select name="activity" id="activity" class="form-control">
                     <option value="Charla">Charla</option>
