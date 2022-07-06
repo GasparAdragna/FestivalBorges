@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Builder;
 
 use App\Contact;
 use App\Activity;
@@ -212,6 +213,21 @@ class FestivalController extends Controller
     public function descargarInscriptosUnicos()
     {
       return Excel::download(new ParticipantsExport(Participant::distinct('email')->get()), 'Participantes.'.Carbon::now()->format('d-m-Y').'.xlsx');
+    }
+    public function landing()
+    {
+      $festival = Festival::where('active', 1)->first();
+      $oradores = Speaker::with('activities')->where('festival_id', $festival->id)->whereHas('activities', function (Builder $query) {
+        $query->where('activity', 'like', 'Charla');
+      })->get();
+      $talleristas = Speaker::where('festival_id', $festival->id)->whereHas('activities', function (Builder $query) {
+        $query->where('activity', 'like', 'Taller');
+      })->get();
+      $experiencias = Speaker::where('festival_id', $festival->id)->whereHas('activities', function (Builder $query) {
+        $query->where('activity', 'like', 'Experiencia Borges');
+      })->get();
+      $speakers = Speaker::where('festival_id', $festival->id)->get();
+      return view('landing', compact('festival', 'oradores', 'talleristas', 'experiencias'));
     }
 
 }

@@ -19,7 +19,7 @@
             <a href="/contacto">E-Mail</a>
           </li>
         </ul>
-        <p class="text-muted small mb-4 mb-lg-0">&copy; Festival Borges 2021. Todos los derechos reservados.</p>
+        <p class="text-muted small mb-4 mb-lg-0">&copy; Festival Borges 2022. Todos los derechos reservados.</p>
       </div>
       <div class="col-lg-4 text-center d-flex align-items-center justify-content-center">
         <p class="text-muted small mb-4 mb-lg-0">Una página de <a href="https://www.linkedin.com/in/gaspar-adragna-282945142/" target="_blank">Gaspar Adragna</a></p>

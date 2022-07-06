@@ -15,9 +15,10 @@ use App\Http\Controllers\FestivalController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\SpeakerController;
 
-Route::get('/', function () {
-    return view('landing');
+Route::get('/2021', function () {
+    return view('2021');
 });
+
 Route::get('chicos', function () {
     return view('chicos');
 });
@@ -57,7 +58,7 @@ Route::get('bienvenido', function () {
 });
 
 Route::post('/inscribirse', [FestivalController::class, 'inscribirse']);
-
+Route::get('/', [FestivalController::class, 'landing']);
 Route::post('contacto', [FestivalController::class, 'contacto']);
 Route::get('talleres', [FestivalController::class, 'talleres']);
 Route::get('charlas', [FestivalController::class, 'charlas']);
