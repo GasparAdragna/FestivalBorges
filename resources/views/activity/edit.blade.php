@@ -26,6 +26,10 @@
                 <textarea name="description" id="description" cols="30" rows="5" class="form-control">{{$activity->description}}</textarea>
             </div>
             <div class="form-group">
+                <label for="link" class="form-label">Link (opcional)</label>
+                <input type="text" name="link" class="form-control" value="{{$activity->link}}">
+            </div>
+            <div class="form-group">
                 <label for="date" class="form-label">Fecha</label>
                 <input type="datetime-local" name="date" class="form-control" value="{{$activity->date}}">
             </div>
