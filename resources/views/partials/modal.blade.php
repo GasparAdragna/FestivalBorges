@@ -14,26 +14,26 @@
                 <p id="date"></p>
                   <div class="mb-3">
                     <label for="first_name" class="form-label">Nombre</label>
-                    <input type="text" name="first_name" class="form-control" required>
+                    <input type="text" name="first_name" class="form-control" required value="{{Cookie::get('first_name')}}">
                   </div>
                   <div class="mb-3">
                     <label for="last_name" class="form-label">Apellido</label>
-                    <input type="text" name="last_name" class="form-control" required>
+                    <input type="text" name="last_name" class="form-control" value="{{Cookie::get('last_name')}}" required>
                   </div>
                   <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" required>
+                    <input type="email" name="email" class="form-control" value="{{Cookie::get('email')}}" required>
                   </div>
                   <div class="mb-3">
                     <label for="birthday" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" name="birthday" class="form-control" required>
+                    <input type="date" name="birthday" class="form-control" value="{{Cookie::get('birthday')}}" required>
                   </div>
                   <div class="mb-3">
                     <label for="sex" class="form-label">Sexo</label>
                     <select name="sex" class="form-control" required>
-                      <option value="Hombre">Hombre</option>
-                      <option value="Mujer">Mujer</option>
-                      <option value="Otro">Otro</option>
+                      <option value="Hombre" {{Cookie::get('sex') == 'Hombre' ? 'selected' : null}}>Hombre</option>
+                      <option value="Mujer" {{Cookie::get('sex') == 'Mujer' ? 'selected' : null}}>Mujer</option>
+                      <option value="Otro" {{Cookie::get('sex') == 'Otro' ? 'selected' : null}}>Otro</option>
                     </select>
                   </div>
                   <div class="mb-3">

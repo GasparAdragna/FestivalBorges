@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\Cookie;
 
 use App\Contact;
 use App\Activity;
@@ -150,6 +151,12 @@ class FestivalController extends Controller
       if($now->gt($activity->date)){
         return redirect()->back()->with('error', 'No se puede inscribir a la actividad debido a que ya pasó');
       }
+
+      Cookie::queue('first_name', $request->first_name, 1440);
+      Cookie::queue('last_name', $request->last_name, 1440);
+      Cookie::queue('email', $request->email, 1440);
+      Cookie::queue('birthday', $request->birthday, 1440);
+      Cookie::queue('sex', $request->sex, 1440);
 
       if(!Participant::where('email', $request->email)->where('activity_id', $request->activity_id)->count()){
         $inscripto = Participant::create($request->all());

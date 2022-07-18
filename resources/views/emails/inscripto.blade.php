@@ -105,6 +105,8 @@
             <td class="paragraph">
                 Facebook: <a href="https://www.facebook.com/FestivalBorges" target="_blank" rel="noopener noreferrer">FestivalBorges</a>
             </td>
+        </tr>
+        <tr>
             <td class="paragraph">
                 Instagram: <a href="https://www.instagram.com/festivalborges" target="_blank" rel="noopener noreferrer">@festivalborges</a>
             </td>
