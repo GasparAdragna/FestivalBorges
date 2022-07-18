@@ -10,12 +10,7 @@
         </tr>
         <tr>
             <td class="paragraph">
-                {{$activity->activity}} de {{$activity->speakerModel->first_name}} {{$activity->speakerModel->last_name}}, "{{$activity->name}}"
-            </td>
-        </tr>
-        <tr>
-            <td class="paragraph">
-                {{\Carbon\Carbon::parse($activity->date)->format('d')}} de Agosto {{\Carbon\Carbon::parse($activity->date)->format('H:i')}}hs de Argentina.
+                {{$activity->activity}} de {{$activity->speakerModel->first_name}} {{$activity->speakerModel->last_name}}, "{{$activity->name}}" - {{\Carbon\Carbon::parse($activity->date)->format('d')}} de Agosto {{\Carbon\Carbon::parse($activity->date)->format('H:i')}}hs de Argentina.
             </td>
         </tr>
         <tr>
