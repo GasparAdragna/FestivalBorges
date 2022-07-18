@@ -233,11 +233,15 @@ class FestivalController extends Controller
       $festival = Festival::where('active', true)->first();
       $oradores = Speaker::with('activities')->whereHas('activities', function (Builder $query) use($festival) {
         $query->where('activity','Charla')->where('festival_id', $festival->id);
-      })->get();
+      })->get()->sortBy(function($item){
+        return array_search($item->location, ['España', 'Italia', 'Internacional', 'Local', 'Argentina']);
+      });
 
       $talleristas = Speaker::with('activities')->whereHas('activities', function (Builder $query) use($festival) {
         $query->where('activity', 'like', 'Taller')->where('festival_id', $festival->id);
-      })->get();
+      })->get()->sortBy(function($item){
+        return array_search($item->location, ['España', 'Italia', 'Internacional', 'Local', 'Argentina']);
+      });
       // $experiencias = Speaker::where('festival_id', $festival->id)->whereHas('activities', function (Builder $query) use($festival) {
       //   $query->where('activity', 'like', 'Experiencia Borges')->where('festival_id', $festival->id);
       // })->get();
