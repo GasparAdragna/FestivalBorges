@@ -19,15 +19,24 @@
             </td>
         </tr>
         <tr>
+			<td width="100%" height="10"></td>
+		</tr>
+        <tr>
 			<td class="paragraph">
                 El Festival tiene como objetivo analizar la obra de Borges y abrir puertas para que nuevos públicos puedan descubrir, acceder y disfrutar de sus textos. Contará con charlas y talleres, con acceso libre y gratuito, e inscripción previa.
 			</td>
+		</tr>
+        <tr>
+			<td width="100%" height="10"></td>
 		</tr>
         <tr>
             <td class="paragraph">
                 La segunda edición se llevará a cabo desde el lunes 8 al 12  de agosto, en el marco del 123° aniversario del nacimiento del autor.
             </td>
         </tr>
+        <tr>
+			<td width="100%" height="10"></td>
+		</tr>
         <tr>
             <td class="paragraph">
                 Se emitirá en vivo desde  el canal de YOUTUBE  del festival
@@ -43,10 +52,16 @@
             </td>
         </tr>
         <tr>
+			<td width="100%" height="10"></td>
+		</tr>
+        <tr>
             <td class="paragraph">
                 El link que recibiste es para acceder a la actividad que te anotaste. El día de la charla tenés que clickear ahí para que puedas verla. 
             </td>
         </tr>
+        <tr>
+			<td width="100%" height="10"></td>
+		</tr>
         <tr>
             <td class="paragraph">
                 Nos apoya <a href="https://www.bajalibros.com/AR" target="_blank">www.Bajalibros.com</a> , una de las empresas más importante de libros digitales.
@@ -68,19 +83,34 @@
             </td>
         </tr>
         <tr>
+			<td width="100%" height="10"></td>
+		</tr>
+        <tr>
             <td class="paragraph">
                 Te esperamos
             </td>
         </tr>
+        <tr>
+			<td width="100%" height="10"></td>
+		</tr>
         <tr>
             <td class="paragraph">
                 Gracias por ser parte del <b>Festival</b>
             </td>
         </tr>
         <tr>
+			<td width="100%" height="10"></td>
+		</tr>
+        <tr>
             <td class="paragraph">
                 Web: <a href="http://festivalborges.com.ar" target="_blank" rel="noopener noreferrer">www.festivalborges.com.ar</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="paragraph">
                 Facebook: <a href="https://www.facebook.com/FestivalBorges" target="_blank" rel="noopener noreferrer">FestivalBorges</a>
+            </td>
+            <td class="paragraph">
                 Instagram: <a href="https://www.instagram.com/festivalborges" target="_blank" rel="noopener noreferrer">@festivalborges</a>
             </td>
         </tr>
