@@ -43,40 +43,86 @@
         </div>
     </div>
     <br>
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    Actividad en la que participa
-                  </div>
-                  @if ($speaker->activities->count() > 1)
-                    <div class="card-body">
-                        <h5 class="card-title">Lectura y análisis de los cuentos:</h5>
-                        <div class="row">
-                            @foreach ($speaker->activities as $actividad)
-                            <div class="col">
-                                <h5 class="card-text mb-0"><b><i>{{$actividad->name}}</i></b></h5>
-                                <blockquote class="blockquote mt-0">
-                                <footer class="blockquote-footer">{{\Carbon\Carbon::parse($actividad->date)->format('d')}} de Agosto {{\Carbon\Carbon::parse($actividad->date)->format('H:i')}}hs</footer>
-                                </blockquote>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscripcion" onclick="inscribirse({{$actividad->id}}, '{{$actividad->name}}', '{{$actividad->speaker}}', '{{$actividad->date}}')">Quiero inscribirme</button>
+    @if ($activities->count() > 0)
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        Actividad en la que participa
+                    </div>
+                    @if ($activities->count() > 1)
+                        <div class="card-body">
+                            <h5 class="card-title">Lectura y análisis de los cuentos:</h5>
+                            <div class="row">
+                                @foreach ($activities as $actividad)
+                                <div class="col">
+                                    <h5 class="card-text mb-0"><b><i>{{$actividad->name}}</i></b></h5>
+                                    <blockquote class="blockquote mt-0">
+                                    <footer class="blockquote-footer">{{\Carbon\Carbon::parse($actividad->date)->format('d')}} de Agosto {{\Carbon\Carbon::parse($actividad->date)->format('H:i')}}hs</footer>
+                                    </blockquote>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscripcion" onclick="inscribirse({{$actividad->id}}, '{{$actividad->name}}', '{{$actividad->speaker}}', '{{$actividad->date}}')">Quiero inscribirme</button>
+                                </div>
+                                @endforeach
                             </div>
-                            @endforeach
                         </div>
-                    </div>
-                  @elseif (isset($speaker->activity))
-                    <div class="card-body">
-                        <h5 class="card-title">{{$speaker->activity->name}}</h5>
-                        <p class="card-text">{{$speaker->activity->description}}</p>
-                        <blockquote class="blockquote mt-0">
-                        <footer class="blockquote-footer">{{\Carbon\Carbon::parse($speaker->activity->date)->format('d')}} de Agosto {{\Carbon\Carbon::parse($speaker->activity->date)->format('H:i')}}hs</footer>
-                        </blockquote>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscripcion" onclick="inscribirse({{$speaker->activity->id}}, '{{$speaker->activity->name}}', '{{$speaker->activity->speaker}}', '{{$speaker->activity->date}}')">Quiero inscribirme</button>
-                    </div>
-                  @endif
-              </div>
+                    @elseif ($activities->count() == 1)
+                    @php
+                        $activity = $activities->first();
+                    @endphp
+                        <div class="card-body">
+                            <h5 class="card-title">{{$activity->name}}</h5>
+                            <p class="card-text">{{$activity->description}}</p>
+                            <blockquote class="blockquote mt-0">
+                            <footer class="blockquote-footer">{{\Carbon\Carbon::parse($activity->date)->format('d')}} de Agosto {{\Carbon\Carbon::parse($activity->date)->format('H:i')}}hs</footer>
+                            </blockquote>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscripcion" onclick="inscribirse({{$activity->id}}, '{{$activity->name}}', '{{$activity->speaker}}', '{{$activity->date}}')">Quiero inscribirme</button>
+                        </div>
+                    @endif
+                </div>
+            </div>
         </div>
-    </div>
+    @endif
+    <br>
+    @if (count($pastActivities) > 0)
+        <div class="row">
+            <div class="col-12">
+                <h2>Ediciones anteriores del festival</h2>
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        Actividades en ediciones anteriores
+                    </div>
+                    @if ($pastActivities->count() > 1)
+                        <div class="card-body">
+                            <h5 class="card-title">Lectura y análisis de los cuentos:</h5>
+                            <div class="row">
+                                @foreach ($pastActivities as $actividad)
+                                <div class="col">
+                                    <h5 class="card-text mb-0"><b><i>{{$actividad->name}}</i></b></h5>
+                                    <blockquote class="blockquote mt-0">
+                                    <footer class="blockquote-footer">{{\Carbon\Carbon::parse($actividad->date)->format('d')}} de Agosto de {{\Carbon\Carbon::parse($actividad->date)->format('Y')}} {{\Carbon\Carbon::parse($actividad->date)->format('H:i')}}hs</footer>
+                                    </blockquote>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    @elseif ($pastActivities->count() == 1)
+                    @php
+                        $activity = $pastActivities->first();
+                    @endphp
+                        <div class="card-body">
+                            <h5 class="card-title">{{$activity->name}}</h5>
+                            <p class="card-text">{{$activity->description}}</p>
+                            <blockquote class="blockquote mt-0">
+                            <footer class="blockquote-footer">{{\Carbon\Carbon::parse($activity->date)->format('d')}} de Agosto de {{\Carbon\Carbon::parse($activity->date)->format('Y')}} {{\Carbon\Carbon::parse($activity->date)->format('H:i')}}hs</footer>
+                            </blockquote>
+                        </div>
+                    @endif
+                </div>
+            </div>
+        </div>        
+    @endif
+
 </div>
 @endsection
 

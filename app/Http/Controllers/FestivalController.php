@@ -52,11 +52,17 @@ class FestivalController extends Controller
 
     public function speaker(Speaker $speaker)
     {
-      return view('orador')->withSpeaker($speaker);
+      $festival = Festival::where('active', 1)->first();
+      $activities = Activity::where('speaker_id', $speaker->id)->where('festival_id', $festival->id)->get();
+      $pastActivities = Activity::where('speaker_id', $speaker->id)->where('festival_id', '!=', $festival->id)->get();
+      return view('orador', compact('speaker', 'activities', 'pastActivities'));
     }
     public function tallerista(Speaker $speaker)
     {
-      return view('orador')->withSpeaker($speaker);
+      $festival = Festival::where('active', 1)->first();
+      $activities = Activity::where('speaker_id', $speaker->id)->where('festival_id', $festival->id)->get();
+      $pastActivities = Activity::where('speaker_id', $speaker->id)->where('festival_id', '!=', $festival->id)->get();
+      return view('orador', compact('speaker', 'activities', 'pastActivities'));
     }
     public function contacto(Request $request)
     {
