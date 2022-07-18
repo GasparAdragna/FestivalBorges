@@ -6,7 +6,7 @@
     <meta name="author" content="Festival Borges">
     <meta name="language" content="spanish">
     <meta name="audience" content="all">
-    <meta name="description" content="Festival para homenajear a uno de los máximos exponentes de la literatura argentina a los 122 años de su nacimiento. Actividades libres y gratuitas">
+    <meta name="description" content="Festival para homenajear a uno de los máximos exponentes de la literatura argentina a los 123 años de su nacimiento. Actividades libres y gratuitas">
     <meta name="keywords" content="Festival Borges, Jorge Luis Borges, Borges">
     <meta name="robots" content="index, all, follow">
     <!-- Hotjar Tracking Code for My site -->

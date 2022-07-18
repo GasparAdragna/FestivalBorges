@@ -54,12 +54,11 @@
       <h3>Actividades por día:</h3>
       <p>Hace click en un dia para ver las actividades programadas para esa fecha</p>
       <div class="text-center">
-        <a href="/pordia/23"><button type="button" class="btn btn-primary btn-lg mt-2">23 de Agosto</button></a>
-        <a href="/pordia/24"><button type="button" class="btn btn-primary btn-lg mt-2">24 de Agosto</button></a>
-        <a href="/pordia/25"><button type="button" class="btn btn-primary btn-lg mt-2">25 de Agosto</button></a>
-        <a href="/pordia/26"><button type="button" class="btn btn-primary btn-lg mt-2">26 de Agosto</button></a>
-        <a href="/pordia/27"><button type="button" class="btn btn-primary btn-lg mt-2">27 de Agosto</button></a>
-        <a href="/pordia/28"><button type="button" class="btn btn-primary btn-lg mt-2">28 de Agosto</button></a>
+        <a href="/pordia/8"><button type="button" class="btn btn-primary btn-lg mt-2">8 de Agosto</button></a>
+        <a href="/pordia/9"><button type="button" class="btn btn-primary btn-lg mt-2">9 de Agosto</button></a>
+        <a href="/pordia/10"><button type="button" class="btn btn-primary btn-lg mt-2">10 de Agosto</button></a>
+        <a href="/pordia/11"><button type="button" class="btn btn-primary btn-lg mt-2">11 de Agosto</button></a>
+        <a href="/pordia/12"><button type="button" class="btn btn-primary btn-lg mt-2">12 de Agosto</button></a>
       </div>
 
       @if ($errors->any())

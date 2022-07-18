@@ -62,6 +62,7 @@ Route::get('/', [FestivalController::class, 'landing']);
 Route::post('contacto', [FestivalController::class, 'contacto']);
 Route::get('talleres', [FestivalController::class, 'talleres']);
 Route::get('charlas', [FestivalController::class, 'charlas']);
+Route::get('leer-a-borges', [FestivalController::class, 'leer']);
 Route::get('experiencia-borges', [FestivalController::class, 'experiencia']);
 Route::get('pordia/{id}', [FestivalController::class, 'porDia']);
 

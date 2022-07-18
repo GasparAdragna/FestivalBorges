@@ -1,30 +1,57 @@
-window.addEventListener('load',
+window.addEventListener(
+    "load",
     function () {
-        fetch("https://restcountries.eu/rest/v2/all")
+        fetch("https://restcountries.com/v3.1/all")
             .then(function (response) {
                 return response.json();
-            }).then(function (paises) {
+            })
+            .then(function (paises) {
                 let pais = document.getElementById("pais");
-                paises.forEach(element => {
-                    let option = document.createElement('option');
-                    option.setAttribute('value', element.name);
-                    option.innerHTML = element.name;
-                    if (element.name == "Argentina") {
-                        option.selected = 'selected';
+                paises.forEach((element) => {
+                    let option = document.createElement("option");
+                    option.setAttribute("value", element.name.common);
+                    option.innerHTML = element.name.common;
+                    if (element.name.common == "Argentina") {
+                        option.selected = "selected";
                     }
                     pais.appendChild(option);
                 });
-            })
-    }, false);
+            });
+    },
+    false
+);
 
 function inscribirse(id, name, speaker, dateString) {
-    const days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-    const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-    let input = document.getElementById('activityInput');
+    const days = [
+        "Domingo",
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado",
+    ];
+    const months = [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre",
+    ];
+    let input = document.getElementById("activityInput");
     input.value = id;
-    let title = document.getElementById('title');
+    let title = document.getElementById("title");
     title.innerHTML = `${speaker}: "${name}"`;
     let date = new Date(dateString);
-    let dateP = document.getElementById('date');
-    dateP.innerHTML = `${days[date.getDay()]} ${date.getDate()} de ${months[date.getMonth()]} ${date.getFullYear()} ${date.getHours()} hs (Argentina) por el canal de YouTube del Festival`;
+    let dateP = document.getElementById("date");
+    dateP.innerHTML = `${days[date.getDay()]} ${date.getDate()} de ${
+        months[date.getMonth()]
+    } ${date.getFullYear()} ${date.getHours()} hs (Argentina) por el canal de YouTube del Festival`;
 }

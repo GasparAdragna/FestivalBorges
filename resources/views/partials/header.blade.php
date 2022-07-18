@@ -21,6 +21,7 @@
             <a class="dropdown-item" href="/sobre">Sobre el Festival</a>
             <a class="dropdown-item" href="/organizacion">Quienes somos</a>
             <a class="dropdown-item" href="/biografia">Biografía de Jorge Luis Borges</a>
+            <a class="dropdown-item" href="/leer-a-borges">Libros de y sobre Borges</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/2021">Edición 2021</a>
           </div>

@@ -21,7 +21,7 @@ class FestivalController extends Controller
 {
     public function create()
     {
-        return view('festival.create');
+        return view('festivals.create');
     }
 
     public function store(Request $request)
@@ -36,7 +36,7 @@ class FestivalController extends Controller
 
     public function edit(Festival $festival)
     {
-        return view('festival.edit', compact('festival'));
+        return view('festivals.edit', compact('festival'));
     }
 
     public function update(Request $request, Festival $festival)
@@ -216,18 +216,23 @@ class FestivalController extends Controller
     }
     public function landing()
     {
-      $festival = Festival::where('active', 1)->first();
-      $oradores = Speaker::with('activities')->where('festival_id', $festival->id)->whereHas('activities', function (Builder $query) {
-        $query->where('activity', 'like', 'Charla');
+      $festival = Festival::where('active', true)->first();
+      $oradores = Speaker::with('activities')->whereHas('activities', function (Builder $query) use($festival) {
+        $query->where('activity','Charla')->where('festival_id', $festival->id);
       })->get();
-      $talleristas = Speaker::where('festival_id', $festival->id)->whereHas('activities', function (Builder $query) {
-        $query->where('activity', 'like', 'Taller');
+
+      $talleristas = Speaker::where('festival_id', $festival->id)->whereHas('activities', function (Builder $query) use($festival) {
+        $query->where('activity', 'like', 'Taller')->where('festival_id', $festival->id);
       })->get();
-      $experiencias = Speaker::where('festival_id', $festival->id)->whereHas('activities', function (Builder $query) {
-        $query->where('activity', 'like', 'Experiencia Borges');
-      })->get();
+      // $experiencias = Speaker::where('festival_id', $festival->id)->whereHas('activities', function (Builder $query) use($festival) {
+      //   $query->where('activity', 'like', 'Experiencia Borges')->where('festival_id', $festival->id);
+      // })->get();
       $speakers = Speaker::where('festival_id', $festival->id)->get();
-      return view('landing', compact('festival', 'oradores', 'talleristas', 'experiencias'));
+      return view('landing', compact('festival', 'oradores', 'talleristas'));
+    }
+    public function leer()
+    {
+      return view('festival.leer');
     }
 
 }

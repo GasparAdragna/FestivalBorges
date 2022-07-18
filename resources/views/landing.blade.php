@@ -1,7 +1,7 @@
 @extends('base')
 
 @section('title')
-    <title>Festival Borges - Homenaje a Jorge Luis Borges a 122 años de su nacimiento</title>
+    <title>Festival Borges - Home</title>
 @endsection
 
 @section('main')
@@ -24,12 +24,12 @@
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <div class="view">
-        <img class="d-block w-100" src="images/banner1-2.png"
+        <img class="d-block w-100" src="images/banner2022.jpg"
           alt="First slide">
         <div class="mask rgba-black-light"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Homenaje a Jorge Luis Borges a 122 años de su nacimiento.</h3>
+        <h3 class="h3-responsive">Gratuito, con inscripción previa, virtual a través de nuestro canal de youtube.</h3>
         <a href="/pordia"><button type="button" class="btn btn-primary btn-lg">Ver actividades por día</button></a>
       </div>
     </div>
@@ -54,8 +54,7 @@
         <div class="mask rgba-black-slight"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">¿Cómo escribió Borges?</h3>
-        <p>No te pierdas la charlas de Daniel Balderston, Borges Center -Universidad de Pittsburgh – Invitado Internacional</p>
+        <h3 class="h3-responsive">No te pierdas la charlas de los escritores españoles Javier Cercas y Luis García Montero - Invitados Internacionales</h3>
         <a href="/charlas"><button type="button" class="btn btn-primary btn-lg">Ver charlas</button></a>
       </div>
     </div>
@@ -107,12 +106,12 @@
         </a>
       </div>
       <div class="col-lg-4 d-flex justify-content-center">
-        <a href="/experiencia-borges">
+        <a href="/leer-a-borges">
           <div class="card">
             <img src="images/cuadrados/lectura.png" class="card-img" alt="...">
             <div class="card-img-overlay">
               <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <p style="color:#fff; font-size: 2em;">Experiencia Borges</p>
+                <p style="color:#fff; font-size: 2em;">Leer a Borges</p>
               </div>
             </div>
           </div>
@@ -156,7 +155,7 @@
         @endforeach
       </div>
       <br>
-      <h2 class="mb-5">Experiencia Borges</h2>
+      {{-- <h2 class="mb-5">Experiencia Borges</h2>
       <div class="row">
         @foreach ($experiencias as $speaker)
           <div class="col-lg-4 col-md-6">
@@ -168,7 +167,7 @@
             </div>
           </div>
         @endforeach
-      </div>
+      </div> --}}
       <br>
       <br>
     </div>
@@ -178,24 +177,34 @@
       <h2 class="mb-5">Nos apoyan</h2>
       <div class="row d-flex align-items-center">
         <div class="col-4">
-          <img src="images/megenazgoLogo.jpg" class="sponsor" alt="Logo Mecenazgo">
+          <a href="https://www.buenosaires.gob.ar/mecenazgo" target="_blank">
+            <img src="images/megenazgoLogo.jpg" class="sponsor" alt="Logo Mecenazgo">
+          </a>
         </div>
         <div class="col-4">
-          <img src="images/impulso-cultural.jpg" style="max-height:100px; max-width:100px;"class="sponsor" alt="Logo Impulso Cultural">
+          <a href="https://www.buenosaires.gob.ar/cultura/impulso-cultural" target="_blank" rel="noopener noreferrer">
+            <img src="images/impulso-cultural.jpg" style="max-height:100px; max-width:100px;"class="sponsor" alt="Logo Impulso Cultural">
+          </a>
         </div>
         <div class="col-4">
-          <img src="images/itau_fundacion.png" class="sponsor" alt="Logo Itau Fundacion">
+          <a href="https://www.fundacionitau.org.ar/" target="_blank">
+            <img src="images/itau_fundacion.png" class="sponsor" alt="Logo Itau Fundacion">
+          </a>
         </div>
       </div>
       <br><br>
       <div class="row d-flex align-items-center">
         <div class="col-4">
           <div class="card bg-dark d-flex justify-content-center">
-            <img src="images/mercatus.png" class="sponsor" alt="Logo Mercatus&Co">
+            <a href="http://mercatus.com.ar/" target="_blank" rel="noopener noreferrer">
+              <img src="images/mercatus.png" class="sponsor" alt="Logo Mercatus&Co">
+            </a>
           </div>
         </div>
         <div class="col-4">
-            <img src="images/AVENGERS logo.jpg" class="sponsor" alt="Logo Avengers SRL">
+          <a href="https://www.bajalibros.com/AR" target="_blank">
+            <img src="images/Bajalibros.png" class="sponsor" alt="Logo Bajalibros">
+          </a>
         </div>
         <div class="col-4">
             <img src="images/BA-2.png" class="sponsor" alt="Logo BA">
