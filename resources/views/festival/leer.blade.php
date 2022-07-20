@@ -122,11 +122,5 @@
         <li>BORGES, DESEO Y SEXO, por Ariel de la Fuente: <a target="_blank" href="https://www.bajalibros.com/AR/BORGES-DESEO-Y-SEXO-Ariel-de-la-Fuente-eBook-2063731">https://www.bajalibros.com/AR/BORGES-DESEO-Y-SEXO-Ariel-de-la-Fuente-eBook-2063731</a></li>
         <li>Entre Borges y Conrad, por Leila Gómez y Sara Castro-Klaren: <a target="_blank" href="https://www.bajalibros.com/AR/Entre-Borges-y-Conrad-Leila-Gomez-eBook-1738104">https://www.bajalibros.com/AR/Entre-Borges-y-Conrad-Leila-Gomez-eBook-1738104</a></li>
       </ul>
-
-
-
-
-
-
-    
+    </div>
 @endsection
