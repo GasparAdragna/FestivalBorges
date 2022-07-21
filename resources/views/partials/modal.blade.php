@@ -41,6 +41,15 @@
                     <select name="country" class="form-control" id="pais">
                     </select>
                   </div>
+                  <div class="">
+                    <div class="form-check">
+                        <input type="hidden" name="tyc" value="0"/>
+                        <input class="form-check-input" type="checkbox" name="tyc" id="tyc" value="1" required {{Cookie::get('tyc') == 'checcked' ? 'checked' : null}}>
+                        <label class="form-check-label" for="tyc">
+                          Acepto los <a href="https://festivalborges.com.ar/tyc" target="_blank" rel="noopener noreferrer">Términos y Condiciones</a>
+                        </label>
+                    </div>
+                  </div>
                   <input type="hidden" name="activity_id" value="" id="activityInput" required>
               </div> 
             </div>

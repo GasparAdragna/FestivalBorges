@@ -148,7 +148,8 @@ class FestivalController extends Controller
         'birthday' => 'required|date',
         'sex' => 'required|string',
         'activity_id' => 'required|int',
-        'country' => 'required|string'
+        'country' => 'required|string',
+        'tyc' => 'required'
       ]);
       
       $now = now('America/Argentina/Buenos_Aires');

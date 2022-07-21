@@ -57,6 +57,10 @@ Route::get('bienvenido', function () {
     return view('bienvenido');
 });
 
+Route::get('tyc', function () {
+    return view('festival.tyc');
+});
+
 Route::post('/inscribirse', [FestivalController::class, 'inscribirse']);
 Route::get('/', [FestivalController::class, 'landing']);
 Route::post('contacto', [FestivalController::class, 'contacto']);
